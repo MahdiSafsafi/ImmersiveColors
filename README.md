@@ -11,4 +11,4 @@ When MS released Windows 8, they introduced a new feature called **ImmerciveColo
 
 ![GUI](https://github.com/MahdiSafsafi/ImmersiveColors/blob/master/ScreenShot/GUI.PNG)
 
-![GUI2](https://github.com/MahdiSafsafi/ImmersiveColors/blob/master/ScreenShot/GUI2.PNG)
+![GUI2](https://github.com/MahdiSafsafi/ImmersiveColors/blob/master/ScreenShot/GUI2.png)
