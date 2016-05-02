@@ -18,7 +18,6 @@ type
     ListBox1: TListBox;
     PaintBox1: TPaintBox;
     RichEdit1: TRichEdit;
-    ClickMe: TButton;
     Label3: TLabel;
     Panel1: TPanel;
     Panel2: TPanel;
@@ -35,7 +34,6 @@ type
     procedure LstColorSetsClick(Sender: TObject);
     procedure ListBox1DrawItem(Control: TWinControl; Index: Integer; Rect: TRect; State: TOwnerDrawState);
     procedure PaintBox1Paint(Sender: TObject);
-    procedure ClickMeClick(Sender: TObject);
     procedure PaintBox2MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure PaintBox2MouseEnter(Sender: TObject);
     procedure PaintBox2MouseLeave(Sender: TObject);
@@ -68,19 +66,12 @@ begin
   PaintBox2.Enabled := CheckBox2.Checked;
 end;
 
-procedure TMain.ClickMeClick(Sender: TObject);
-begin
-  RichEdit1.SelStart := 0;
-  RichEdit1.SelLength := 6;
-  RichEdit1.SelAttributes.Style := [fsBold];
-  RichEdit1.SelAttributes.Color := FColorSet.Colors[ImmersiveControlDarkRichEditHighlight];
-end;
-
 procedure TMain.CheckBox1Click(Sender: TObject);
 begin
   LstColorSets.Enabled := not TCheckBox(Sender).Checked;
   if TCheckBox(Sender).Checked then
     FColorSet := FImmersiveColors.ActiveColorSet;
+  RefreshColors;
 end;
 
 procedure TMain.ColorSetChanged(Sender: TObject);
@@ -102,6 +93,13 @@ begin
   end;
   for I := 0 to FImmersiveColors.ColorSetCount do
     LstColorSets.Items.Add(IntToStr(I));
+
+  RichEdit1.SelStart := 0;
+  RichEdit1.SelLength := 6;
+  RichEdit1.SelAttributes.Style := [fsBold];
+
+  LstColorSets.Enabled := not TCheckBox(Sender).Checked;
+
   RefreshColors;
 end;
 
@@ -205,6 +203,8 @@ var
 begin
   LCanvas := TListBox(Control).Canvas;
   c := FImmersiveColors.ColorSets[Index].Colors[ImmersiveStartBackground];
+  if not Control.Enabled then
+    c := GetSysColor(COLOR_GRAYTEXT);
   LCanvas.Brush.Color := c;
   InflateRect(Rect, -2, -2);
   LCanvas.FillRect(Rect);
@@ -293,6 +293,8 @@ begin
   LstColorTypes.Refresh;
   Label1.Font.Color := FColorSet.Colors[ImmersiveStartDesktopTilesBackground];
   Label2.Font.Color := FColorSet.Colors[ImmersiveLightWUWarning];
+  RichEdit1.SelAttributes.Color := FColorSet.Colors[ImmersiveControlDarkRichEditHighlight];
+
   Refresh;
 end;
 

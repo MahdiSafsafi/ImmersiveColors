@@ -96,15 +96,6 @@ object Main: TMain
       TabOrder = 1
       Zoom = 100
     end
-    object ClickMe: TButton
-      Left = 256
-      Top = 59
-      Width = 75
-      Height = 25
-      Caption = 'ClickMe'
-      TabOrder = 2
-      OnClick = ClickMeClick
-    end
     object CheckBox2: TCheckBox
       Left = 184
       Top = 288
@@ -113,7 +104,7 @@ object Main: TMain
       Caption = 'Enable XButton'
       Checked = True
       State = cbChecked
-      TabOrder = 3
+      TabOrder = 2
       OnClick = CheckBox2Click
     end
   end
@@ -197,6 +188,8 @@ object Main: TMain
         Width = 97
         Height = 22
         Caption = 'Use Active Color Set'
+        Checked = True
+        State = cbChecked
         TabOrder = 0
         OnClick = CheckBox1Click
       end
