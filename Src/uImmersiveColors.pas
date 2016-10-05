@@ -1302,7 +1302,8 @@ const
   { ===> Undocumented UxTheme functions <=== }
 {$WARNINGS Off}
 function GetImmersiveColorSetCount: Integer; stdcall; external themelib index 94;
-function GetImmersiveColorFromColorSetEx(dwImmersiveColorSet: UInt; dwImmersiveColorType: Integer; bIgnoreHighContrast: Bool; dwHighContrastCacheMode: UInt): UInt; stdcall; external themelib index 95;
+function GetImmersiveColorFromColorSetEx(dwImmersiveColorSet: UInt; dwImmersiveColorType: Integer; bIgnoreHighContrast: Bool; dwHighContrastCacheMode: UInt)
+  : UInt; stdcall; external themelib index 95;
 function GetImmersiveColorTypeFromName(pName: PChar): Integer; stdcall; external themelib index 96;
 function GetImmersiveUserColorSetPreference(bForceCheckRegistry: Bool; bSkipCheckOnFail: Bool): Integer; stdcall; external themelib index 98;
 function GetImmersiveColorNamedTypeByIndex(dwIndex: UInt): IntPtr; stdcall; external themelib index 100;
@@ -1317,11 +1318,9 @@ var
   hModule: THandle;
 begin
   hModule := GetModuleHandle(themelib);
-  Result := False;
-  if hModule <> 0 then
-  begin
+  Result := hModule <> 0;
+  if Result then
     Result := GetProcAddress(hModule, 'GetImmersiveColorFromColorSetEx') <> nil;
-  end;
 end;
 
 constructor TImmersiveColors.Create;
@@ -1359,7 +1358,8 @@ end;
 
 procedure TImmersiveColors.EnumColorTypeNames;
 var
-  I, Id: Integer;
+  Id: Integer;
+  I: Integer;
   P: IntPtr;
   S: String;
 begin
@@ -1411,7 +1411,8 @@ end;
 
 procedure TImmersiveColors.Update;
 var
-  n, I: Integer;
+  I: Integer;
+  n: Integer;
 begin
   if not FImmersiveColorsSupported then
     Exit;
@@ -1438,7 +1439,7 @@ begin
     WM_SETTINGCHANGE:
       begin
         P := PChar(message.LParam);
-        if lstrcmpi(P, 'ImmersiveColorSet') = 0 then
+        if (P^ = 'I') and (lstrcmpi(P, 'ImmersiveColorSet') = 0) then
         begin
           if Assigned(FColorSetChangedEvent) then
             FColorSetChangedEvent(Self);
