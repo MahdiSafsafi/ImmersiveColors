@@ -15,10 +15,19 @@ object Main: TMain
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
+  object Splitter1: TSplitter
+    Left = 509
+    Top = 0
+    Height = 396
+    Align = alRight
+    ExplicitLeft = 504
+    ExplicitTop = 248
+    ExplicitHeight = 100
+  end
   object GroupBox1: TGroupBox
     Left = 145
     Top = 0
-    Width = 367
+    Width = 364
     Height = 396
     Align = alClient
     Caption = 'GroupBox1'
@@ -46,10 +55,11 @@ object Main: TMain
     object PaintBox1: TPaintBox
       Left = 2
       Top = 352
-      Width = 363
+      Width = 360
       Height = 42
       Align = alBottom
       OnPaint = PaintBox1Paint
+      ExplicitWidth = 363
     end
     object PaintBox2: TPaintBox
       Left = 16

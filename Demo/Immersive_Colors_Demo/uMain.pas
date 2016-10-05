@@ -26,6 +26,7 @@ type
     Panel4: TPanel;
     PaintBox2: TPaintBox;
     CheckBox2: TCheckBox;
+    Splitter1: TSplitter;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure LstColorTypesDrawItem(Control: TWinControl; Index: Integer; Rect: TRect; State: TOwnerDrawState);
