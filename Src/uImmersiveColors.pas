@@ -1357,6 +1357,8 @@ begin
 end;
 
 procedure TImmersiveColors.EnumColorTypeNames;
+const
+  ColorTypeNamesCount = $04C3;
 var
   Id: Integer;
   I: Integer;
@@ -1366,7 +1368,7 @@ begin
   if Assigned(FColorTypeNames) then
   begin
     FColorTypeNames.Clear;
-    for I := 0 to $0FFF do
+    for I := 0 to ColorTypeNamesCount do
     begin
       P := GetImmersiveColorNamedTypeByIndex(I);
       if P <> 0 then
