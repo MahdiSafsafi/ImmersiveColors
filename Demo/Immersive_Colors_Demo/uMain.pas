@@ -134,9 +134,7 @@ begin
   begin
     h := 0;
     s := 0;
-  end
-  else
-  begin
+  end else begin
     D := Cmax - Cmin;
     // calc L
     if l < 0.5 then

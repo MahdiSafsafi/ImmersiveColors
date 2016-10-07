@@ -35,6 +35,8 @@ uses
   Vcl.Graphics;
 
 type
+
+{$REGION 'ImmersiveColorType'}
   TImmersiveColorType = ( //
     ImmersiveApplicationBackground, //
     ImmersiveApplicationBackgroundDarkTheme, //
@@ -1255,6 +1257,7 @@ type
     ImmersiveTabletModeDragJointDividerBackground, //
     ImmersiveTabletModePPIJointDividerBackground //
     );
+{$ENDREGION 'ImmersiveColorType'}
 
   TColorSet = class(TObject)
   private
