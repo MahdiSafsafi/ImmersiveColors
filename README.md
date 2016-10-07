@@ -3,10 +3,10 @@ When MS released Windows 8, they introduced a new feature called **ImmerciveColo
 
 ##Features:
 -	Easy access to Windows theme colors.
--	Getting Active color set.
+-	[Getting Active color set](https://github.com/MahdiSafsafi/ImmersiveColors/wiki#getting-active-color-set).
 -	Enumerating color type names.
--	Retrieve color value based on color type.
--	Notified when system changes Immersive settings.
+-	[Retrieve color value based on color type](https://github.com/MahdiSafsafi/ImmersiveColors/wiki#accessing-immersive-colors).
+-	[Notified when system changes Immersive settings](https://github.com/MahdiSafsafi/ImmersiveColors/wiki#get-notified-when-user-changes-immersive-colors-settings).
 
 
 ![GUI](https://github.com/MahdiSafsafi/ImmersiveColors/blob/master/ScreenShot/GUI.PNG)
