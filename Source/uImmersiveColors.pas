@@ -1,6 +1,6 @@
 // **************************************************************************************************
 //
-// Copyright (c) 2016 Mahdi Safsafi.
+// Copyright (c) 2017 Mahdi Safsafi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -1295,7 +1295,8 @@ type
     property ColorSets[Index: Integer]: TColorSet read GetColorSet;
     property ColorTypeNames: TStringList read FColorTypeNames;
     property ActiveColorSet: TColorSet read GetActiveColorSet;
-    property OnColorSetChanged: TNotifyEvent read FColorSetChangedEvent write FColorSetChangedEvent;
+    property OnColorSetChanged: TNotifyEvent read FColorSetChangedEvent
+      write FColorSetChangedEvent;
     property IsImmersiveColorsSupported: Boolean read FImmersiveColorsSupported;
   end;
 
@@ -1304,12 +1305,17 @@ const
 
   { ===> Undocumented UxTheme functions <=== }
 {$WARNINGS Off}
-function GetImmersiveColorSetCount: Integer; stdcall; external themelib index 94;
-function GetImmersiveColorFromColorSetEx(dwImmersiveColorSet: UInt; dwImmersiveColorType: Integer; bIgnoreHighContrast: Bool; dwHighContrastCacheMode: UInt)
-  : UInt; stdcall; external themelib index 95;
-function GetImmersiveColorTypeFromName(pName: PChar): Integer; stdcall; external themelib index 96;
-function GetImmersiveUserColorSetPreference(bForceCheckRegistry: Bool; bSkipCheckOnFail: Bool): Integer; stdcall; external themelib index 98;
-function GetImmersiveColorNamedTypeByIndex(dwIndex: UInt): IntPtr; stdcall; external themelib index 100;
+function GetImmersiveColorSetCount: Integer; stdcall;
+  external themelib index 94;
+function GetImmersiveColorFromColorSetEx(dwImmersiveColorSet: UInt;
+  dwImmersiveColorType: Integer; bIgnoreHighContrast: Bool;
+  dwHighContrastCacheMode: UInt): UInt; stdcall; external themelib index 95;
+function GetImmersiveColorTypeFromName(pName: PChar): Integer; stdcall;
+  external themelib index 96;
+function GetImmersiveUserColorSetPreference(bForceCheckRegistry: Bool;
+  bSkipCheckOnFail: Bool): Integer; stdcall; external themelib index 98;
+function GetImmersiveColorNamedTypeByIndex(dwIndex: UInt): IntPtr; stdcall;
+  external themelib index 100;
 {$WARNINGS On}
 
 implementation
@@ -1479,7 +1485,8 @@ begin
   Result := GetColorFromColorTypeName(LName);
 end;
 
-function TColorSet.GetColorFromColorTypeName(const ColorTypeName: String): TColor;
+function TColorSet.GetColorFromColorTypeName(const ColorTypeName
+  : String): TColor;
 var
   ColorType: UInt;
   Color: UInt;
