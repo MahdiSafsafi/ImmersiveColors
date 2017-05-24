@@ -1,5 +1,5 @@
 # ImmersiveColors
-When MS released Windows 8, they introduced a new feature called **ImmerciveColors**. Based on your OS settings (wallpapers or color set) you may have a sets of colors that can be used to draw your UI. However this feature is not a quite known for the public since it’s still undocumented (even with Windows 10). So I wrote this simple project the demonstrate how to benefit from this feature.
+When MS released Windows 8, they introduced a new feature called **ImmerciveColors**. Based on your OS settings (wallpapers or color set) you may have a sets of colors that can be used to draw your UI. However this feature is not a quite known for the public since it’s still undocumented (even with Windows 10). So I wrote this simple project to demonstrate how to benefit from this feature.
 
 ##Features:
 -	Easy access to Windows theme colors.
