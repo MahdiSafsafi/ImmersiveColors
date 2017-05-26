@@ -1,6 +1,6 @@
 // **************************************************************************************************
 //
-// Copyright (c) 2017 Mahdi Safsafi.
+// Copyright (c) 2016-2017 Mahdi Safsafi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -30,6 +30,7 @@ uses
   System.Classes,
   System.TypInfo,
   System.SysUtils,
+  System.UITypes,
   WinApi.Windows,
   WinApi.Messages,
   Vcl.Graphics;
@@ -1263,13 +1264,17 @@ type
   private
     FId: Integer;
     FParent: TObject;
+    function AlphaToColor(AlphaColor: TAlphaColor): TColor; inline;
+    function IsActive: Boolean; inline;
+    function GetAlphaColor(Index: TImmersiveColorType): TAlphaColor;
     function GetColor(Index: TImmersiveColorType): TColor;
-    function IsActive: Boolean;
   public
     constructor Create(Parent: TObject; Id: Integer); virtual;
     destructor Destroy; override;
-    function GetColorFromColorTypeName(const ColorTypeName: String): TColor;
+    function GetAlphaColorFromColorTypeName(const ColorTypeName: String): TAlphaColor;
+    function GetColorFromColorTypeName(const ColorTypeName: String): TAlphaColor;
     property Colors[Index: TImmersiveColorType]: TColor read GetColor;
+    property AlphaColors[Index: TImmersiveColorType]: TAlphaColor read GetAlphaColor;
     property Active: Boolean read IsActive;
   end;
 
@@ -1280,7 +1285,7 @@ type
     FColorSetChangedEvent: TNotifyEvent;
     FImmersiveColorsSupported: Boolean;
     FHandle: THandle;
-    function GetColorSetCount: Integer;
+    function GetColorSetCount: Integer; inline;
     function GetColorSet(Index: Integer): TColorSet;
     function GetActiveColorSet: TColorSet;
     function CheckImmersiveColorsSupported: Boolean;
@@ -1295,8 +1300,7 @@ type
     property ColorSets[Index: Integer]: TColorSet read GetColorSet;
     property ColorTypeNames: TStringList read FColorTypeNames;
     property ActiveColorSet: TColorSet read GetActiveColorSet;
-    property OnColorSetChanged: TNotifyEvent read FColorSetChangedEvent
-      write FColorSetChangedEvent;
+    property OnColorSetChanged: TNotifyEvent read FColorSetChangedEvent write FColorSetChangedEvent;
     property IsImmersiveColorsSupported: Boolean read FImmersiveColorsSupported;
   end;
 
@@ -1305,17 +1309,11 @@ const
 
   { ===> Undocumented UxTheme functions <=== }
 {$WARNINGS Off}
-function GetImmersiveColorSetCount: Integer; stdcall;
-  external themelib index 94;
-function GetImmersiveColorFromColorSetEx(dwImmersiveColorSet: UInt;
-  dwImmersiveColorType: Integer; bIgnoreHighContrast: Bool;
-  dwHighContrastCacheMode: UInt): UInt; stdcall; external themelib index 95;
-function GetImmersiveColorTypeFromName(pName: PChar): Integer; stdcall;
-  external themelib index 96;
-function GetImmersiveUserColorSetPreference(bForceCheckRegistry: Bool;
-  bSkipCheckOnFail: Bool): Integer; stdcall; external themelib index 98;
-function GetImmersiveColorNamedTypeByIndex(dwIndex: UInt): IntPtr; stdcall;
-  external themelib index 100;
+function GetImmersiveColorSetCount: Integer; stdcall; external themelib index 94;
+function GetImmersiveColorFromColorSetEx(dwImmersiveColorSet: UInt; dwImmersiveColorType: Integer; bIgnoreHighContrast: Bool; dwHighContrastCacheMode: UInt): UInt; stdcall; external themelib index 95;
+function GetImmersiveColorTypeFromName(pName: PChar): Integer; stdcall; external themelib index 96;
+function GetImmersiveUserColorSetPreference(bForceCheckRegistry: Bool; bSkipCheckOnFail: Bool): Integer; stdcall; external themelib index 98;
+function GetImmersiveColorNamedTypeByIndex(dwIndex: UInt): IntPtr; stdcall; external themelib index 100;
 {$WARNINGS On}
 
 implementation
@@ -1377,10 +1375,10 @@ begin
   if Assigned(FColorTypeNames) then
   begin
     FColorTypeNames.Clear;
-    for I := 0 to ColorTypeNamesCount do
+    for I := 0 to ColorTypeNamesCount - 1 do
     begin
       P := GetImmersiveColorNamedTypeByIndex(I);
-      if P <> 0 then
+      if (P <> 0) then
       begin
         S := String(PChar(PNativeInt(P)^)).Trim;
         if not S.IsEmpty then
@@ -1462,6 +1460,11 @@ end;
 
 { TColorSet }
 
+function TColorSet.AlphaToColor(AlphaColor: TAlphaColor): TColor;
+begin
+  Result := TColor(AlphaColor and $00FFFFFF);
+end;
+
 constructor TColorSet.Create(Parent: TObject; Id: Integer);
 begin
   Assert(Assigned(Parent));
@@ -1473,31 +1476,42 @@ end;
 
 destructor TColorSet.Destroy;
 begin
-
   inherited;
 end;
 
-function TColorSet.GetColor(Index: TImmersiveColorType): TColor;
+function TColorSet.GetAlphaColor(Index: TImmersiveColorType): TAlphaColor;
 var
   LName: String;
 begin
   LName := GetEnumName(TypeInfo(TImmersiveColorType), Ord(Index));
-  Result := GetColorFromColorTypeName(LName);
+  Result := GetAlphaColorFromColorTypeName(LName);
 end;
 
-function TColorSet.GetColorFromColorTypeName(const ColorTypeName
-  : String): TColor;
+function TColorSet.GetColor(Index: TImmersiveColorType): TColor;
+var
+  AlphaColor: TAlphaColor;
+begin
+  AlphaColor := GetAlphaColor(Index);
+  Result := AlphaToColor(AlphaColor);
+end;
+
+function TColorSet.GetColorFromColorTypeName(const ColorTypeName: String): TAlphaColor;
+var
+  AlphaColor: TAlphaColor;
+begin
+  AlphaColor := GetAlphaColorFromColorTypeName(ColorTypeName);
+  Result := AlphaToColor(AlphaColor);
+end;
+
+function TColorSet.GetAlphaColorFromColorTypeName(const ColorTypeName: String): TAlphaColor;
 var
   ColorType: UInt;
-  Color: UInt;
 begin
   Result := $00;
   if not ColorTypeName.IsEmpty then
   begin
     ColorType := GetImmersiveColorTypeFromName(PChar(ColorTypeName));
-    Color := GetImmersiveColorFromColorSetEx(FId, ColorType, False, 0);
-    Color := Color and $00FFFFFF; // Clear "A" !
-    Result := TColor(Color);
+    Result := GetImmersiveColorFromColorSetEx(FId, ColorType, False, 0);
   end;
 end;
 
