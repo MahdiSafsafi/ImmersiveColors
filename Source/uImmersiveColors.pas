@@ -1383,7 +1383,7 @@ begin
       P := GetImmersiveColorNamedTypeByIndex(I);
       if (P <> 0) then
       begin
-        S := String(PChar(PNativeInt(P)^)).Trim;
+        S := String(PChar(PPointer(P)^)).Trim();
         if not S.IsEmpty then
         begin
           S := 'Immersive' + S;
@@ -1464,8 +1464,7 @@ end;
 constructor TColorSet.Create(Parent: TImmersiveColors; Id: Integer);
 begin
   Assert(Assigned(Parent));
-  Assert(Parent is TImmersiveColors);
-  Assert((Id > -1) and (Id <= TImmersiveColors(Parent).ColorSetCount));
+  Assert((Id > -1) and (Id <= Parent.ColorSetCount));
   FParent := Parent;
   FId := Id;
 end;
