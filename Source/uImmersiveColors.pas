@@ -1441,21 +1441,11 @@ begin
 end;
 
 procedure TImmersiveColors.WndProc(var Message: TMessage);
-var
-  P: PChar;
 begin
-  case Message.Msg of
-    WM_SETTINGCHANGE:
-      begin
-        P := PChar(message.LParam);
-        if (P^ = 'I') and (lstrcmpi(P, 'ImmersiveColorSet') = 0) then
-        begin
-          if Assigned(FColorSetChangedEvent) then
-            FColorSetChangedEvent(Self);
-        end;
-      end;
-  end;
-  inherited;
+  if (Message.Msg = WM_SETTINGCHANGE) and Assigned(FColorSetChangedEvent) and (lstrcmpi(TWMSettingChange(Message).Section, 'ImmersiveColorSet') = 0) then
+    FColorSetChangedEvent(Self);
+  with Message do
+    Result := DefWindowProc(FHandle, Msg, WParam, LParam);
 end;
 
 { TColorSet }
