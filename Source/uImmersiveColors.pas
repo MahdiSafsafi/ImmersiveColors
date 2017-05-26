@@ -1259,17 +1259,18 @@ type
     ImmersiveTabletModePPIJointDividerBackground //
     );
 {$ENDREGION 'ImmersiveColorType'}
+  TImmersiveColors = class;
 
   TColorSet = class(TObject)
   private
     FId: Integer;
-    FParent: TObject;
+    FParent: TImmersiveColors;
     function AlphaToColor(AlphaColor: TAlphaColor): TColor; inline;
     function IsActive: Boolean; inline;
     function GetAlphaColor(Index: TImmersiveColorType): TAlphaColor;
     function GetColor(Index: TImmersiveColorType): TColor;
   public
-    constructor Create(Parent: TObject; Id: Integer); virtual;
+    constructor Create(Parent: TImmersiveColors; Id: Integer); virtual;
     destructor Destroy; override;
     function GetAlphaColorFromColorTypeName(const ColorTypeName: String): TAlphaColor;
     function GetColorFromColorTypeName(const ColorTypeName: String): TAlphaColor;
@@ -1289,19 +1290,20 @@ type
     function GetColorSet(Index: Integer): TColorSet;
     function GetActiveColorSet: TColorSet;
     function CheckImmersiveColorsSupported: Boolean;
-  protected
     procedure EnumColorTypeNames;
+  protected
     procedure WndProc(var Message: TMessage); virtual;
   public
     constructor Create; virtual;
     destructor Destroy; override;
     procedure Update;
+    { properties }
     property ColorSetCount: Integer read GetColorSetCount;
     property ColorSets[Index: Integer]: TColorSet read GetColorSet;
     property ColorTypeNames: TStringList read FColorTypeNames;
     property ActiveColorSet: TColorSet read GetActiveColorSet;
-    property OnColorSetChanged: TNotifyEvent read FColorSetChangedEvent write FColorSetChangedEvent;
     property IsImmersiveColorsSupported: Boolean read FImmersiveColorsSupported;
+    property OnColorSetChanged: TNotifyEvent read FColorSetChangedEvent write FColorSetChangedEvent;
   end;
 
 const
@@ -1360,6 +1362,7 @@ begin
 
   if FHandle <> INVALID_HANDLE_VALUE then
     DeallocateHWnd(FHandle);
+
   inherited;
 end;
 
@@ -1426,17 +1429,20 @@ begin
   if not FImmersiveColorsSupported then
     Exit;
 
-  n := ColorSetCount;
   if not Assigned(FList) then
     FList := TList.Create;
+
   for I := 0 to FList.Count - 1 do
     TColorSet(FList.Items[I]).Free;
   FList.Clear;
+
+  n := ColorSetCount;
   for I := 0 to n do
     FList.Add(TColorSet.Create(Self, I));
 
   if not Assigned(FColorTypeNames) then
     FColorTypeNames := TStringList.Create;
+
   EnumColorTypeNames;
 end;
 
@@ -1455,7 +1461,7 @@ begin
   Result := TColor(AlphaColor and $00FFFFFF);
 end;
 
-constructor TColorSet.Create(Parent: TObject; Id: Integer);
+constructor TColorSet.Create(Parent: TImmersiveColors; Id: Integer);
 begin
   Assert(Assigned(Parent));
   Assert(Parent is TImmersiveColors);
@@ -1507,7 +1513,7 @@ end;
 
 function TColorSet.IsActive: Boolean;
 begin
-  Result := TImmersiveColors(FParent).ColorSetCount = FId;
+  Result := FParent.ColorSetCount = FId;
 end;
 
 end.
