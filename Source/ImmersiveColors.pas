@@ -79,8 +79,8 @@ type
   TEnumImmersiveColorNamesProc = function(ColorType: TImmersiveColorType;
     const Name: string; UserTag: Pointer): Boolean;
 
-/// <summary> Returns Immersive ColorSet count.
-/// </summary>
+  /// <summary> Returns Immersive ColorSet count.
+  /// </summary>
 function GetImmersiveColorSetCount(): Cardinal; {$IFNDEF WINOS}inline; {$ENDIF}
 
 /// <summary> Returns active immersive ColorSet.
@@ -448,7 +448,7 @@ begin
   Result := False;
 end;
 
-function UnRegisterNotifyEvent(Event: TColorChangedEvent): Boolean;
+function UnRegisterNotifyEvent(const Event: TColorChangedEvent): Boolean;
 begin
   Result := False;
 end;
