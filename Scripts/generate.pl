@@ -71,3 +71,4 @@ printf $th ");\n\n";
 
 close $fh;
 close $th;
+1;
