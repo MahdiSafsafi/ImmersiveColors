@@ -32,8 +32,12 @@ implementation
 { TMain }
 
 procedure TMain.ImmersiveColorSetListBox1Click(Sender: TObject);
+var
+  i: Integer;
 begin
-  ImmersiveColorsListBox1.ImmersiveColorSet := ImmersiveColorSetListBox1.ItemIndex;
+  i := ImmersiveColorSetListBox1.ItemIndex;
+  if (i > -1) then
+    ImmersiveColorsListBox1.ImmersiveColorSet := NativeUInt(ImmersiveColorSetListBox1.Items.Objects[i]);
 end;
 
 end.
