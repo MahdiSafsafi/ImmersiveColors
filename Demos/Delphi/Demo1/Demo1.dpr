@@ -1,10 +1,10 @@
-// JCL_DEBUG_EXPERT_GENERATEJDBG OFF
-program Immersive_Color_Demo;
+program Demo1;
 
 uses
   Vcl.Forms,
   uMain in 'uMain.pas' {Main},
-  uImmersiveColors in '..\..\Source\uImmersiveColors.pas';
+  ImmersiveColors in '..\..\..\Source\ImmersiveColors.pas',
+  ImmersiveColorsControls in '..\..\..\Components\Source\ImmersiveColorsControls.pas';
 
 {$R *.res}
 

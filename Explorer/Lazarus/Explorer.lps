@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="Explorer.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Main"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMain"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="8"/>
+        <CursorPos X="3" Y="18"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\Components\Source\ImmersiveColorsControls.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="342"/>
+        <CursorPos Y="349"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\lcl\stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="567"/>
+        <CursorPos X="17" Y="576"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="33" Y="108"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="86"/>
+        <CursorPos X="56" Y="94"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="133"/>
+        <CursorPos X="57" Y="133"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="18" HistoryIndex="17">
+      <Position1>
+        <Filename Value="..\..\Components\Source\ImmersiveColorsControls.pas"/>
+        <Caret Line="291" TopLine="287"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="299" Column="55" TopLine="299"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="303" TopLine="299"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="305" TopLine="299"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="306" TopLine="299"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="307" TopLine="299"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="303" TopLine="299"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="305" TopLine="299"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="306" TopLine="299"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="305" Column="29" TopLine="299"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="302" Column="32" TopLine="297"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="117" Column="5" TopLine="109"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="304" Column="22" TopLine="299"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\Source\ImmersiveColors.pas"/>
+        <Caret Line="146" Column="57" TopLine="137"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\Components\Source\ImmersiveColorsControls.pas"/>
+        <Caret Line="381" TopLine="372"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\Components\Source\ImmersiveColorsControls.pas"/>
+        <Caret Line="285" TopLine="269"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\Components\Source\ImmersiveColorsControls.pas"/>
+        <Caret Line="63" Column="3" TopLine="47"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\Components\Source\ImmersiveColorsControls.pas"/>
+        <Caret Line="337" Column="3" TopLine="330"/>
+      </Position18>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

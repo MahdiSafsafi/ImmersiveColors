@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DF933F57-5215-4361-AA4C-E3968B506715}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Components\Delphi\ImmersiveColorsControlsPackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Explorer\Delphi\Explorer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demos\Delphi\Demo1\Demo1.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ImmersiveColorsControlsPackage">
+        <MSBuild Projects="Components\Delphi\ImmersiveColorsControlsPackage.dproj"/>
+    </Target>
+    <Target Name="ImmersiveColorsControlsPackage:Clean">
+        <MSBuild Projects="Components\Delphi\ImmersiveColorsControlsPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImmersiveColorsControlsPackage:Make">
+        <MSBuild Projects="Components\Delphi\ImmersiveColorsControlsPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Explorer">
+        <MSBuild Projects="Explorer\Delphi\Explorer.dproj"/>
+    </Target>
+    <Target Name="Explorer:Clean">
+        <MSBuild Projects="Explorer\Delphi\Explorer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Explorer:Make">
+        <MSBuild Projects="Explorer\Delphi\Explorer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Demo1">
+        <MSBuild Projects="Demos\Delphi\Demo1\Demo1.dproj"/>
+    </Target>
+    <Target Name="Demo1:Clean">
+        <MSBuild Projects="Demos\Delphi\Demo1\Demo1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Demo1:Make">
+        <MSBuild Projects="Demos\Delphi\Demo1\Demo1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ImmersiveColorsControlsPackage;Explorer;Demo1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ImmersiveColorsControlsPackage:Clean;Explorer:Clean;Demo1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ImmersiveColorsControlsPackage:Make;Explorer:Make;Demo1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,1226 @@
+#=================================================
+# https://github.com/MahdiSafsafi/ImmersiveColors
+#=================================================
+
+# table format:
+# name and value are always required !
+# kind and rival are optional. 
+
+ImmersiveApplicationBackground : value=0x0000
+ImmersiveApplicationBackgroundDarkTheme : value=0x0001 kind=dark rival=ImmersiveApplicationBackgroundLightTheme
+ImmersiveApplicationBackgroundLightTheme : value=0x0002 kind=light rival=ImmersiveApplicationBackgroundDarkTheme
+ImmersiveApplicationText                 : value=0x0003
+ImmersiveApplicationTextDarkTheme        : value=0x0004 kind=dark rival=ImmersiveApplicationTextLightTheme
+ImmersiveApplicationTextLightTheme       : value=0x0005 kind=light rival=ImmersiveApplicationTextDarkTheme
+ImmersiveBootBackground                  : value=0x0006
+ImmersiveBootConfirmationButton          : value=0x0007
+ImmersiveBootConfirmationButtonBackgroundDisabled : value=0x0008
+ImmersiveBootConfirmationButtonBackgroundHover    : value=0x0009
+ImmersiveBootConfirmationButtonBackgroundPressed  : value=0x000a
+ImmersiveBootConfirmationButtonBackgroundRest     : value=0x000b
+ImmersiveBootConfirmationButtonBorderDisabled     : value=0x000c
+ImmersiveBootConfirmationButtonBorderHover        : value=0x000d
+ImmersiveBootConfirmationButtonBorderPressed      : value=0x000e
+ImmersiveBootConfirmationButtonBorderRest         : value=0x000f
+ImmersiveBootConfirmationButtonTextDisabled       : value=0x0010
+ImmersiveBootConfirmationButtonTextHover          : value=0x0011
+ImmersiveBootConfirmationButtonTextPressed        : value=0x0012
+ImmersiveBootConfirmationButtonTextRest           : value=0x0013
+ImmersiveBootDefaultConfirmationButtonBackgroundDisabled : value=0x0014
+ImmersiveBootDefaultConfirmationButtonBackgroundHover    : value=0x0015
+ImmersiveBootDefaultConfirmationButtonBackgroundPressed  : value=0x0016
+ImmersiveBootDefaultConfirmationButtonBackgroundRest     : value=0x0017
+ImmersiveBootDefaultConfirmationButtonBorderDisabled     : value=0x0018
+ImmersiveBootDefaultConfirmationButtonBorderHover        : value=0x0019
+ImmersiveBootDefaultConfirmationButtonBorderPressed      : value=0x001a
+ImmersiveBootDefaultConfirmationButtonBorderRest         : value=0x001b
+ImmersiveBootDefaultConfirmationButtonTextDisabled       : value=0x001c
+ImmersiveBootDefaultConfirmationButtonTextHover          : value=0x001d
+ImmersiveBootDefaultConfirmationButtonTextPressed        : value=0x001e
+ImmersiveBootDefaultConfirmationButtonTextRest           : value=0x001f
+ImmersiveBootEditBackground                              : value=0x0020
+ImmersiveBootEditBackgroundActive                        : value=0x0021
+ImmersiveBootEditBackgroundDisabled                      : value=0x0022
+ImmersiveBootEditBackgroundHover                         : value=0x0023
+ImmersiveBootEditBackgroundRest                          : value=0x0024
+ImmersiveBootEditBorderDisabled                          : value=0x0025
+ImmersiveBootErrorText                                   : value=0x0026
+ImmersiveBootMenuButtonFocusRect                         : value=0x0027
+ImmersiveBootMenuButtonGlyphBackground                   : value=0x0028
+ImmersiveBootMenuButtonMouseHover                        : value=0x0029
+ImmersiveBootMenuButtonPressedHighlight                  : value=0x002a
+ImmersiveBootMenuButtonPressedText                       : value=0x002b
+ImmersiveBootPrimaryText                                 : value=0x002c
+ImmersiveBootProgressText                                : value=0x002d
+ImmersiveBootSecondaryText                               : value=0x002e
+ImmersiveBootTextLinkHover                               : value=0x002f
+ImmersiveBootTextLinkPressed                             : value=0x0030
+ImmersiveBootTextLinkRest                                : value=0x0031
+ImmersiveBootTitleText                                   : value=0x0032
+ImmersiveControlAppDefaultDarkButtonBackgroundHover      : value=0x0033 kind=dark
+ImmersiveControlAppDefaultDarkButtonBackgroundRest       : value=0x0034 kind=dark
+ImmersiveControlAppDefaultDarkButtonBorderHover          : value=0x0035 kind=dark
+ImmersiveControlAppDefaultDarkButtonBorderRest           : value=0x0036 kind=dark
+ImmersiveControlAppLightToggleTrackFillEnabled           : value=0x0037 kind=light
+ImmersiveControlBlackButtonDisabled                      : value=0x0038
+ImmersiveControlContextMenuBackgroundHover               : value=0x0039
+ImmersiveControlContextMenuBackgroundPressed             : value=0x003a
+ImmersiveControlContextMenuBackgroundRest                : value=0x003b
+ImmersiveControlContextMenuSeparator                     : value=0x003c
+ImmersiveControlContextMenuTextHover                     : value=0x003d
+ImmersiveControlContextMenuTextPressed                   : value=0x003e
+ImmersiveControlContextMenuTextRest                      : value=0x003f
+ImmersiveControlDarkAppButtonBackgroundDisabled          : value=0x0040 kind=dark rival=ImmersiveControlLightAppButtonBackgroundDisabled
+ImmersiveControlDarkAppButtonBackgroundHover             : value=0x0041 kind=dark rival=ImmersiveControlLightAppButtonBackgroundHover
+ImmersiveControlDarkAppButtonBackgroundPressed           : value=0x0042 kind=dark rival=ImmersiveControlLightAppButtonBackgroundPressed
+ImmersiveControlDarkAppButtonBackgroundRest              : value=0x0043 kind=dark rival=ImmersiveControlLightAppButtonBackgroundRest
+ImmersiveControlDarkAppButtonBorderDisabled              : value=0x0044 kind=dark rival=ImmersiveControlLightAppButtonBorderDisabled
+ImmersiveControlDarkAppButtonBorderHover                 : value=0x0045 kind=dark rival=ImmersiveControlLightAppButtonBorderHover
+ImmersiveControlDarkAppButtonBorderPressed               : value=0x0046 kind=dark rival=ImmersiveControlLightAppButtonBorderPressed
+ImmersiveControlDarkAppButtonBorderRest                  : value=0x0047 kind=dark rival=ImmersiveControlLightAppButtonBorderRest
+ImmersiveControlDarkAppButtonTextDisabled                : value=0x0048 kind=dark rival=ImmersiveControlLightAppButtonTextDisabled
+ImmersiveControlDarkAppButtonTextHover                   : value=0x0049 kind=dark rival=ImmersiveControlLightAppButtonTextHover
+ImmersiveControlDarkAppButtonTextPressed                 : value=0x004a kind=dark rival=ImmersiveControlLightAppButtonTextPressed
+ImmersiveControlDarkAppButtonTextRest                    : value=0x004b kind=dark rival=ImmersiveControlLightAppButtonTextRest
+ImmersiveControlDarkButtonBackgroundDisabled             : value=0x004c kind=dark rival=ImmersiveControlLightButtonBackgroundDisabled
+ImmersiveControlDarkButtonBackgroundHover                : value=0x004d kind=dark rival=ImmersiveControlLightButtonBackgroundHover
+ImmersiveControlDarkButtonBackgroundPressed              : value=0x004e kind=dark rival=ImmersiveControlLightButtonBackgroundPressed
+ImmersiveControlDarkButtonBackgroundRest                 : value=0x004f kind=dark rival=ImmersiveControlLightButtonBackgroundRest
+ImmersiveControlDarkButtonBorderDisabled                 : value=0x0050 kind=dark rival=ImmersiveControlLightButtonBorderDisabled
+ImmersiveControlDarkButtonBorderHover                    : value=0x0051 kind=dark rival=ImmersiveControlLightButtonBorderHover
+ImmersiveControlDarkButtonBorderPressed                  : value=0x0052 kind=dark rival=ImmersiveControlLightButtonBorderPressed
+ImmersiveControlDarkButtonBorderRest                     : value=0x0053 kind=dark rival=ImmersiveControlLightButtonBorderRest
+ImmersiveControlDarkButtonTextDisabled                   : value=0x0054 kind=dark rival=ImmersiveControlLightButtonTextDisabled
+ImmersiveControlDarkButtonTextHover                      : value=0x0055 kind=dark rival=ImmersiveControlLightButtonTextHover
+ImmersiveControlDarkButtonTextPressed                    : value=0x0056 kind=dark rival=ImmersiveControlLightButtonTextPressed
+ImmersiveControlDarkButtonTextRest                       : value=0x0057 kind=dark rival=ImmersiveControlLightButtonTextRest
+ImmersiveControlDarkCheckboxBackgroundDisabled           : value=0x0058 kind=dark rival=ImmersiveControlLightCheckboxBackgroundDisabled
+ImmersiveControlDarkCheckboxBackgroundHover              : value=0x0059 kind=dark rival=ImmersiveControlLightCheckboxBackgroundHover
+ImmersiveControlDarkCheckboxBackgroundPressed            : value=0x005a kind=dark rival=ImmersiveControlLightCheckboxBackgroundPressed
+ImmersiveControlDarkCheckboxBackgroundRest               : value=0x005b kind=dark rival=ImmersiveControlLightCheckboxBackgroundRest
+ImmersiveControlDarkCheckboxBorderDisabled               : value=0x005c kind=dark rival=ImmersiveControlLightCheckboxBorderDisabled
+ImmersiveControlDarkCheckboxBorderHover                  : value=0x005d kind=dark rival=ImmersiveControlLightCheckboxBorderHover
+ImmersiveControlDarkCheckboxBorderPressed                : value=0x005e kind=dark rival=ImmersiveControlLightCheckboxBorderPressed
+ImmersiveControlDarkCheckboxBorderRest                   : value=0x005f kind=dark rival=ImmersiveControlLightCheckboxBorderRest
+ImmersiveControlDarkCheckboxGlyphDisabled                : value=0x0060 kind=dark rival=ImmersiveControlLightCheckboxGlyphDisabled
+ImmersiveControlDarkCheckboxGlyphHover                   : value=0x0061 kind=dark rival=ImmersiveControlLightCheckboxGlyphHover
+ImmersiveControlDarkCheckboxGlyphPressed                 : value=0x0062 kind=dark rival=ImmersiveControlLightCheckboxGlyphPressed
+ImmersiveControlDarkCheckboxGlyphRest                    : value=0x0063 kind=dark rival=ImmersiveControlLightCheckboxGlyphRest
+ImmersiveControlDarkCheckboxLabelDisabled                : value=0x0064 kind=dark rival=ImmersiveControlLightCheckboxLabelDisabled
+ImmersiveControlDarkCheckboxLabelHover                   : value=0x0065 kind=dark rival=ImmersiveControlLightCheckboxLabelHover
+ImmersiveControlDarkCheckboxLabelPressed                 : value=0x0066 kind=dark rival=ImmersiveControlLightCheckboxLabelPressed
+ImmersiveControlDarkCheckboxLabelRest                    : value=0x0067 kind=dark rival=ImmersiveControlLightCheckboxLabelRest
+ImmersiveControlDarkFocusRect                            : value=0x0068 kind=dark rival=ImmersiveControlLightFocusRect
+ImmersiveControlDarkLinkDisabled                         : value=0x0069 kind=dark rival=ImmersiveLightControlLinkDisabled
+ImmersiveControlDarkLinkHover                            : value=0x006a kind=dark rival=ImmersiveControlLightLinkHover
+ImmersiveControlDarkLinkPressed                          : value=0x006b kind=dark rival=ImmersiveLightControlLinkPressed
+ImmersiveControlDarkLinkRest                             : value=0x006c kind=dark rival=ImmersiveControlLightLinkRest
+ImmersiveControlDarkLinkVisited                          : value=0x006d kind=dark rival=ImmersiveLightControlLinkVisited
+ImmersiveControlDarkPanningIndicator                     : value=0x006e kind=dark rival=ImmersiveControlLightPanningIndicator
+ImmersiveControlDarkProgressBackground                   : value=0x006f kind=dark rival=ImmersiveControlLightProgressBackground
+ImmersiveControlDarkProgressForeground                   : value=0x0070 kind=dark rival=ImmersiveControlLightProgressForeground
+ImmersiveControlDarkRichEditBackgroundDisabled           : value=0x0071 kind=dark rival=ImmersiveControlLightRichEditBackgroundDisabled
+ImmersiveControlDarkRichEditBackgroundFocus              : value=0x0072 kind=dark rival=ImmersiveControlLightRichEditBackgroundFocus
+ImmersiveControlDarkRichEditBackgroundHover              : value=0x0073 kind=dark rival=ImmersiveControlLightRichEditBackgroundHover
+ImmersiveControlDarkRichEditBackgroundPressed            : value=0x0074 kind=dark rival=ImmersiveControlLightRichEditBackgroundPressed
+ImmersiveControlDarkRichEditBackgroundRest               : value=0x0075 kind=dark rival=ImmersiveControlLightRichEditBackgroundRest
+ImmersiveControlDarkRichEditBorderDisabled               : value=0x0076 kind=dark rival=ImmersiveControlLightRichEditBorderDisabled
+ImmersiveControlDarkRichEditBorderFocus                  : value=0x0077 kind=dark rival=ImmersiveControlLightRichEditBorderFocus
+ImmersiveControlDarkRichEditBorderHover                  : value=0x0078 kind=dark rival=ImmersiveControlLightRichEditBorderHover
+ImmersiveControlDarkRichEditBorderPressed                : value=0x0079 kind=dark rival=ImmersiveControlLightRichEditBorderPressed
+ImmersiveControlDarkRichEditBorderRest                   : value=0x007a kind=dark rival=ImmersiveControlLightRichEditBorderRest
+ImmersiveControlDarkRichEditButtonBackgroundHover        : value=0x007b kind=dark rival=ImmersiveControlLightRichEditButtonBackgroundHover
+ImmersiveControlDarkRichEditButtonBackgroundPressed      : value=0x007c kind=dark rival=ImmersiveControlLightRichEditButtonBackgroundPressed
+ImmersiveControlDarkRichEditButtonBackgroundRest         : value=0x007d kind=dark rival=ImmersiveControlLightRichEditButtonBackgroundRest
+ImmersiveControlDarkRichEditButtonGlyphHover             : value=0x007e kind=dark rival=ImmersiveControlLightRichEditButtonGlyphHover
+ImmersiveControlDarkRichEditButtonGlyphPressed           : value=0x007f kind=dark rival=ImmersiveControlLightRichEditButtonGlyphPressed
+ImmersiveControlDarkRichEditButtonGlyphRest              : value=0x0080 kind=dark rival=ImmersiveControlLightRichEditButtonGlyphRest
+ImmersiveControlDarkRichEditHighlight                    : value=0x0081 kind=dark rival=ImmersiveControlLightRichEditHighlight
+ImmersiveControlDarkRichEditPromptTextDisabled           : value=0x0082 kind=dark rival=ImmersiveControlLightRichEditPromptTextDisabled
+ImmersiveControlDarkRichEditPromptTextFocus              : value=0x0083 kind=dark rival=ImmersiveControlLightRichEditPromptTextFocus
+ImmersiveControlDarkRichEditPromptTextRest               : value=0x0084 kind=dark rival=ImmersiveControlLightRichEditPromptTextRest
+ImmersiveControlDarkRichEditStartPromptBackgroundHover   : value=0x0085 kind=dark
+ImmersiveControlDarkRichEditStartPromptBackgroundRest    : value=0x0086 kind=dark
+ImmersiveControlDarkRichEditStartPromptButtonGlyphHover  : value=0x0087 kind=dark
+ImmersiveControlDarkRichEditStartPromptTextRest          : value=0x0088 kind=dark
+ImmersiveControlDarkRichEditTextDisabled                 : value=0x0089 kind=dark rival=ImmersiveControlLightRichEditTextDisabled
+ImmersiveControlDarkRichEditTextFocus                    : value=0x008a kind=dark rival=ImmersiveControlLightRichEditTextFocus
+ImmersiveControlDarkRichEditTextHelper                   : value=0x008b kind=dark rival=ImmersiveControlLightRichEditTextHelper
+ImmersiveControlDarkRichEditTextHighlighted              : value=0x008c kind=dark rival=ImmersiveControlLightRichEditTextHighlighted
+ImmersiveControlDarkRichEditTextHover                    : value=0x008d kind=dark rival=ImmersiveControlLightRichEditTextHover
+ImmersiveControlDarkRichEditTextRest                     : value=0x008e kind=dark rival=ImmersiveControlLightRichEditTextRest
+ImmersiveControlDarkRoundButtonFillLayerDisabled         : value=0x008f kind=dark rival=ImmersiveControlLightRoundButtonFillLayerDisabled
+ImmersiveControlDarkRoundButtonFillLayerHover            : value=0x0090 kind=dark rival=ImmersiveControlLightRoundButtonFillLayerHover
+ImmersiveControlDarkRoundButtonFillLayerPressed          : value=0x0091 kind=dark rival=ImmersiveControlLightRoundButtonFillLayerPressed
+ImmersiveControlDarkRoundButtonFillLayerRest             : value=0x0092 kind=dark rival=ImmersiveControlLightRoundButtonFillLayerRest
+ImmersiveControlDarkRoundButtonGlyphDisabled             : value=0x0093 kind=dark rival=ImmersiveControlLightRoundButtonGlyphDisabled
+ImmersiveControlDarkRoundButtonGlyphLayerHover           : value=0x0094 kind=dark rival=ImmersiveControlLightRoundButtonGlyphLayerHover
+ImmersiveControlDarkRoundButtonGlyphLayerPressed         : value=0x0095 kind=dark rival=ImmersiveControlLightRoundButtonGlyphLayerPressed
+ImmersiveControlDarkRoundButtonGlyphLayerRest            : value=0x0096 kind=dark rival=ImmersiveControlLightRoundButtonGlyphLayerRest
+ImmersiveControlDarkRoundButtonOutlineDisabled           : value=0x0097 kind=dark rival=ImmersiveControlLightRoundButtonOutlineDisabled
+ImmersiveControlDarkRoundButtonOutlineLayerHover         : value=0x0098 kind=dark rival=ImmersiveControlLightRoundButtonOutlineLayerHover
+ImmersiveControlDarkRoundButtonOutlineLayerPressed       : value=0x0099 kind=dark rival=ImmersiveControlLightRoundButtonOutlineLayerPressed
+ImmersiveControlDarkRoundButtonOutlineLayerRest          : value=0x009a kind=dark rival=ImmersiveControlLightRoundButtonOutlineLayerRest
+ImmersiveControlDarkScrollbarButtonGlyphHover            : value=0x009b kind=dark rival=ImmersiveControlLightScrollbarButtonGlyphHover
+ImmersiveControlDarkScrollbarButtonGlyphPressed          : value=0x009c kind=dark rival=ImmersiveControlLightScrollbarButtonGlyphPressed
+ImmersiveControlDarkScrollbarButtonGlyphRest             : value=0x009d kind=dark rival=ImmersiveControlLightScrollbarButtonGlyphRest
+ImmersiveControlDarkScrollbarButtonHover                 : value=0x009e kind=dark rival=ImmersiveControlLightScrollbarButtonHover
+ImmersiveControlDarkScrollbarButtonPressed               : value=0x009f kind=dark rival=ImmersiveControlLightScrollbarButtonPressed
+ImmersiveControlDarkScrollbarButtonRest                  : value=0x00a0 kind=dark rival=ImmersiveControlLightScrollbarButtonRest
+ImmersiveControlDarkScrollbarThumbHover                  : value=0x00a1 kind=dark rival=ImmersiveControlLightScrollbarThumbHover
+ImmersiveControlDarkScrollbarThumbPressed                : value=0x00a2 kind=dark rival=ImmersiveControlLightScrollbarThumbPressed
+ImmersiveControlDarkScrollbarThumbRest                   : value=0x00a3 kind=dark rival=ImmersiveControlLightScrollbarThumbRest
+ImmersiveControlDarkScrollbarTrack                       : value=0x00a4 kind=dark rival=ImmersiveControlLightScrollbarTrack
+ImmersiveControlDarkSelectBackgroundDisabled             : value=0x00a5 kind=dark rival=ImmersiveControlLightSelectBackgroundDisabled
+ImmersiveControlDarkSelectBackgroundHover                : value=0x00a6 kind=dark rival=ImmersiveControlLightSelectBackgroundHover
+ImmersiveControlDarkSelectBackgroundPressed              : value=0x00a7 kind=dark rival=ImmersiveControlLightSelectBackgroundPressed
+ImmersiveControlDarkSelectBackgroundRest                 : value=0x00a8 kind=dark rival=ImmersiveControlLightSelectBackgroundRest
+ImmersiveControlDarkSelectBorderDisabled                 : value=0x00a9 kind=dark rival=ImmersiveControlLightSelectBorderDisabled
+ImmersiveControlDarkSelectBorderHover                    : value=0x00aa kind=dark rival=ImmersiveControlLightSelectBorderHover
+ImmersiveControlDarkSelectBorderPressed                  : value=0x00ab kind=dark rival=ImmersiveControlLightSelectBorderPressed
+ImmersiveControlDarkSelectBorderRest                     : value=0x00ac kind=dark rival=ImmersiveControlLightSelectBorderRest
+ImmersiveControlDarkSelectGlyphDisabled                  : value=0x00ad kind=dark rival=ImmersiveControlLightSelectGlyphDisabled
+ImmersiveControlDarkSelectGlyphRest                      : value=0x00ae kind=dark rival=ImmersiveControlLightSelectGlyphRest
+ImmersiveControlDarkSelectHighlightedSecondaryTextPressed : value=0x00af kind=dark
+ImmersiveControlDarkSelectHighlightedTextPressed          : value=0x00b0 kind=dark rival=ImmersiveControlLightSelectHighlightedTextPressed
+ImmersiveControlDarkSelectHighlightHover                  : value=0x00b1 kind=dark rival=ImmersiveControlLightSelectHighlightHover
+ImmersiveControlDarkSelectHighlightPressed                : value=0x00b2 kind=dark rival=ImmersiveControlLightSelectHighlightPressed
+ImmersiveControlDarkSelectHighlightSelected               : value=0x00b3 kind=dark rival=ImmersiveControlLightSelectHighlightSelected
+ImmersiveControlDarkSelectHighlightSelectedHover          : value=0x00b4 kind=dark rival=ImmersiveControlLightSelectHighlightSelectedHover
+ImmersiveControlDarkSelectPopupBackgroundDisabled         : value=0x00b5 kind=dark rival=ImmersiveControlLightSelectPopupBackgroundDisabled
+ImmersiveControlDarkSelectPopupBackgroundHover            : value=0x00b6 kind=dark rival=ImmersiveControlLightSelectPopupBackgroundHover
+ImmersiveControlDarkSelectPopupBackgroundPressed          : value=0x00b7 kind=dark rival=ImmersiveControlLightSelectPopupBackgroundPressed
+ImmersiveControlDarkSelectPopupBackgroundRest             : value=0x00b8 kind=dark rival=ImmersiveControlLightSelectPopupBackgroundRest
+ImmersiveControlDarkSelectPopupBackgroundSelected         : value=0x00b9 kind=dark rival=ImmersiveControlLightSelectPopupBackgroundSelected
+ImmersiveControlDarkSelectPopupBorder                     : value=0x00ba kind=dark rival=ImmersiveControlLightSelectPopupBorder
+ImmersiveControlDarkSelectPopupTextDisabled               : value=0x00bb kind=dark rival=ImmersiveControlLightSelectPopupTextDisabled
+ImmersiveControlDarkSelectPopupTextHover                  : value=0x00bc kind=dark rival=ImmersiveControlLightSelectPopupTextHover
+ImmersiveControlDarkSelectPopupTextPressed                : value=0x00bd kind=dark rival=ImmersiveControlLightSelectPopupTextPressed
+ImmersiveControlDarkSelectPopupTextRest                   : value=0x00be kind=dark rival=ImmersiveControlLightSelectPopupTextRest
+ImmersiveControlDarkSelectPopupTextSelected               : value=0x00bf kind=dark rival=ImmersiveControlLightSelectPopupTextSelected
+ImmersiveControlDarkSelectSecondaryTextHighlighted        : value=0x00c0 kind=dark
+ImmersiveControlDarkSelectSecondaryTextHover              : value=0x00c1 kind=dark
+ImmersiveControlDarkSelectSecondaryTextPressed            : value=0x00c2 kind=dark
+ImmersiveControlDarkSelectTextDisabled                    : value=0x00c3 kind=dark rival=ImmersiveControlLightSelectTextDisabled
+ImmersiveControlDarkSelectTextHighlighted                 : value=0x00c4 kind=dark rival=ImmersiveControlLightSelectTextHighlighted
+ImmersiveControlDarkSelectTextHover                       : value=0x00c5 kind=dark rival=ImmersiveControlLightSelectTextHover
+ImmersiveControlDarkSelectTextPressed                     : value=0x00c6 kind=dark rival=ImmersiveControlLightSelectTextPressed
+ImmersiveControlDarkSelectTextRest                        : value=0x00c7 kind=dark rival=ImmersiveControlLightSelectTextRest
+ImmersiveControlDarkSliderBorder                          : value=0x00c8 kind=dark rival=ImmersiveControlLightSliderBorder
+ImmersiveControlDarkSliderThumbBorder                     : value=0x00c9 kind=dark rival=ImmersiveControlLightSliderThumbBorder
+ImmersiveControlDarkSliderThumbBorderDisabled             : value=0x00ca kind=dark rival=ImmersiveControlLightSliderThumbBorderDisabled
+ImmersiveControlDarkSliderThumbBorderHover                : value=0x00cb kind=dark rival=ImmersiveControlLightSliderThumbBorderHover
+ImmersiveControlDarkSliderThumbBorderPressed              : value=0x00cc kind=dark rival=ImmersiveControlLightSliderThumbBorderPressed
+ImmersiveControlDarkSliderThumbBorderRest                 : value=0x00cd kind=dark rival=ImmersiveControlLightSliderThumbBorderRest
+ImmersiveControlDarkSliderThumbDisabled                   : value=0x00ce kind=dark rival=ImmersiveControlLightSliderThumbDisabled
+ImmersiveControlDarkSliderThumbHover                      : value=0x00cf kind=dark rival=ImmersiveControlLightSliderThumbHover
+ImmersiveControlDarkSliderThumbPressed                    : value=0x00d0 kind=dark rival=ImmersiveControlLightSliderThumbPressed
+ImmersiveControlDarkSliderThumbRest                       : value=0x00d1 kind=dark rival=ImmersiveControlLightSliderThumbRest
+ImmersiveControlDarkSliderTickMark                        : value=0x00d2 kind=dark rival=ImmersiveControlLightSliderTickMark
+ImmersiveControlDarkSliderTrackBackgroundDisabled         : value=0x00d3 kind=dark rival=ImmersiveControlLightSliderTrackBackgroundDisabled
+ImmersiveControlDarkSliderTrackBackgroundHover            : value=0x00d4 kind=dark rival=ImmersiveControlLightSliderTrackBackgroundHover
+ImmersiveControlDarkSliderTrackBackgroundPressed          : value=0x00d5 kind=dark rival=ImmersiveControlLightSliderTrackBackgroundPressed
+ImmersiveControlDarkSliderTrackBackgroundRest             : value=0x00d6 kind=dark rival=ImmersiveControlLightSliderTrackBackgroundRest
+ImmersiveControlDarkSliderTrackBufferingDisabled          : value=0x00d7 kind=dark rival=ImmersiveControlLightSliderTrackBufferingDisabled
+ImmersiveControlDarkSliderTrackBufferingHover             : value=0x00d8 kind=dark rival=ImmersiveControlLightSliderTrackBufferingHover
+ImmersiveControlDarkSliderTrackBufferingPressed           : value=0x00d9 kind=dark rival=ImmersiveControlLightSliderTrackBufferingPressed
+ImmersiveControlDarkSliderTrackBufferingRest              : value=0x00da kind=dark rival=ImmersiveControlLightSliderTrackBufferingRest
+ImmersiveControlDarkSliderTrackFillDisabled               : value=0x00db kind=dark rival=ImmersiveControlLightSliderTrackFillDisabled
+ImmersiveControlDarkSliderTrackFillHover                  : value=0x00dc kind=dark rival=ImmersiveControlLightSliderTrackFillHover
+ImmersiveControlDarkSliderTrackFillPressed                : value=0x00dd kind=dark rival=ImmersiveControlLightSliderTrackFillPressed
+ImmersiveControlDarkSliderTrackFillRest                   : value=0x00de kind=dark rival=ImmersiveControlLightSliderTrackFillRest
+ImmersiveControlDarkToggleLabelDisabled                   : value=0x00df kind=dark rival=ImmersiveControlLightToggleLabelDisabled
+ImmersiveControlDarkToggleLabelEnabled                    : value=0x00e0 kind=dark rival=ImmersiveControlLightToggleLabelEnabled
+ImmersiveControlDarkToggleOnOffTextDisabled               : value=0x00e1 kind=dark rival=ImmersiveControlLightToggleOnOffTextDisabled
+ImmersiveControlDarkToggleOnOffTextEnabled                : value=0x00e2 kind=dark rival=ImmersiveControlLightToggleOnOffTextEnabled
+ImmersiveControlDarkToggleThumbDisabled                   : value=0x00e3 kind=dark rival=ImmersiveControlLightToggleThumbDisabled
+ImmersiveControlDarkToggleThumbEnabled                    : value=0x00e4 kind=dark rival=ImmersiveControlLightToggleThumbEnabled
+ImmersiveControlDarkToggleTrackBackgroundDisabled         : value=0x00e5 kind=dark rival=ImmersiveControlLightToggleTrackBackgroundDisabled
+ImmersiveControlDarkToggleTrackBackgroundEnabled          : value=0x00e6 kind=dark rival=ImmersiveControlLightToggleTrackBackgroundEnabled
+ImmersiveControlDarkToggleTrackBackgroundHover            : value=0x00e7 kind=dark rival=ImmersiveControlLightToggleTrackBackgroundHover
+ImmersiveControlDarkToggleTrackBackgroundPressed          : value=0x00e8 kind=dark rival=ImmersiveControlLightToggleTrackBackgroundPressed
+ImmersiveControlDarkToggleTrackBackgroundRest             : value=0x00e9 kind=dark rival=ImmersiveControlLightToggleTrackBackgroundRest
+ImmersiveControlDarkToggleTrackBorderDisabled             : value=0x00ea kind=dark rival=ImmersiveControlLightToggleTrackBorderDisabled
+ImmersiveControlDarkToggleTrackBorderEnabled              : value=0x00eb kind=dark rival=ImmersiveControlLightToggleTrackBorderEnabled
+ImmersiveControlDarkToggleTrackFillDisabled               : value=0x00ec kind=dark rival=ImmersiveControlLightToggleTrackFillDisabled
+ImmersiveControlDarkToggleTrackFillEnabled                : value=0x00ed kind=dark rival=ImmersiveControlLightToggleTrackFillEnabled
+ImmersiveControlDarkToggleTrackFillHover                  : value=0x00ee kind=dark rival=ImmersiveControlLightToggleTrackFillHover
+ImmersiveControlDarkToggleTrackFillPressed                : value=0x00ef kind=dark rival=ImmersiveControlLightToggleTrackFillPressed
+ImmersiveControlDarkToggleTrackFillRest                   : value=0x00f0 kind=dark rival=ImmersiveControlLightToggleTrackFillRest
+ImmersiveControlDarkToggleTrackGutterDisabled             : value=0x00f1 kind=dark rival=ImmersiveControlLightToggleTrackGutterDisabled
+ImmersiveControlDarkToggleTrackGutterEnabled              : value=0x00f2 kind=dark rival=ImmersiveControlLightToggleTrackGutterEnabled
+ImmersiveControlDefaultDarkButtonBackgroundDisabled       : value=0x00f3 kind=dark rival=ImmersiveControlDefaultLightButtonBackgroundDisabled
+ImmersiveControlDefaultDarkButtonBackgroundHover          : value=0x00f4 kind=dark rival=ImmersiveControlDefaultLightButtonBackgroundHover
+ImmersiveControlDefaultDarkButtonBackgroundPressed        : value=0x00f5 kind=dark rival=ImmersiveControlDefaultLightButtonBackgroundPressed
+ImmersiveControlDefaultDarkButtonBackgroundRest           : value=0x00f6 kind=dark rival=ImmersiveControlDefaultLightButtonBackgroundRest
+ImmersiveControlDefaultDarkButtonBorderDisabled           : value=0x00f7 kind=dark rival=ImmersiveControlDefaultLightButtonBorderDisabled
+ImmersiveControlDefaultDarkButtonBorderHover              : value=0x00f8 kind=dark rival=ImmersiveControlDefaultLightButtonBorderHover
+ImmersiveControlDefaultDarkButtonBorderPressed            : value=0x00f9 kind=dark rival=ImmersiveControlDefaultLightButtonBorderPressed
+ImmersiveControlDefaultDarkButtonBorderRest               : value=0x00fa kind=dark rival=ImmersiveControlDefaultLightButtonBorderRest
+ImmersiveControlDefaultDarkButtonTextDisabled             : value=0x00fb kind=dark rival=ImmersiveControlDefaultLightButtonTextDisabled
+ImmersiveControlDefaultDarkButtonTextHover                : value=0x00fc kind=dark rival=ImmersiveControlDefaultLightButtonTextHover
+ImmersiveControlDefaultDarkButtonTextPressed              : value=0x00fd kind=dark rival=ImmersiveControlDefaultLightButtonTextPressed
+ImmersiveControlDefaultDarkButtonTextRest                 : value=0x00fe kind=dark rival=ImmersiveControlDefaultLightButtonTextRest
+ImmersiveControlDefaultFocusRectDark                      : value=0x00ff kind=dark rival=ImmersiveControlDefaultFocusRectLight
+ImmersiveControlDefaultFocusRectLight                     : value=0x0100 kind=light rival=ImmersiveControlDefaultFocusRectDark
+ImmersiveControlDefaultLightButtonBackgroundDisabled      : value=0x0101 kind=light rival=ImmersiveControlDefaultDarkButtonBackgroundDisabled
+ImmersiveControlDefaultLightButtonBackgroundHover         : value=0x0102 kind=light rival=ImmersiveControlDefaultDarkButtonBackgroundHover
+ImmersiveControlDefaultLightButtonBackgroundPressed       : value=0x0103 kind=light rival=ImmersiveControlDefaultDarkButtonBackgroundPressed
+ImmersiveControlDefaultLightButtonBackgroundRest          : value=0x0104 kind=light rival=ImmersiveControlDefaultDarkButtonBackgroundRest
+ImmersiveControlDefaultLightButtonBorderDisabled          : value=0x0105 kind=light rival=ImmersiveControlDefaultDarkButtonBorderDisabled
+ImmersiveControlDefaultLightButtonBorderHover             : value=0x0106 kind=light rival=ImmersiveControlDefaultDarkButtonBorderHover
+ImmersiveControlDefaultLightButtonBorderPressed           : value=0x0107 kind=light rival=ImmersiveControlDefaultDarkButtonBorderPressed
+ImmersiveControlDefaultLightButtonBorderRest              : value=0x0108 kind=light rival=ImmersiveControlDefaultDarkButtonBorderRest
+ImmersiveControlDefaultLightButtonTextDisabled            : value=0x0109 kind=light rival=ImmersiveControlDefaultDarkButtonTextDisabled
+ImmersiveControlDefaultLightButtonTextHover               : value=0x010a kind=light rival=ImmersiveControlDefaultDarkButtonTextHover
+ImmersiveControlDefaultLightButtonTextPressed             : value=0x010b kind=light rival=ImmersiveControlDefaultDarkButtonTextPressed
+ImmersiveControlDefaultLightButtonTextRest                : value=0x010c kind=light rival=ImmersiveControlDefaultDarkButtonTextRest
+ImmersiveControlFivePercentOpaqueWhite                    : value=0x010d
+ImmersiveControlHighContrastBTNFACE                       : value=0x010e
+ImmersiveControlHighContrastBTNTEXT                       : value=0x010f
+ImmersiveControlHighContrastGRAYTEXT                      : value=0x0110
+ImmersiveControlHighContrastHIGHLIGHT                     : value=0x0111
+ImmersiveControlHighContrastHIGHLIGHTTEXT                 : value=0x0112
+ImmersiveControlHighContrastHOTLIGHT                      : value=0x0113
+ImmersiveControlHighContrastWINDOW                        : value=0x0114
+ImmersiveControlHighContrastWINDOWTEXT                    : value=0x0115
+ImmersiveControlLightAppButtonBackgroundDisabled          : value=0x0116 kind=light rival=ImmersiveControlDarkAppButtonBackgroundDisabled
+ImmersiveControlLightAppButtonBackgroundHover             : value=0x0117 kind=light rival=ImmersiveControlDarkAppButtonBackgroundHover
+ImmersiveControlLightAppButtonBackgroundPressed           : value=0x0118 kind=light rival=ImmersiveControlDarkAppButtonBackgroundPressed
+ImmersiveControlLightAppButtonBackgroundRest              : value=0x0119 kind=light rival=ImmersiveControlDarkAppButtonBackgroundRest
+ImmersiveControlLightAppButtonBorderDisabled              : value=0x011a kind=light rival=ImmersiveControlDarkAppButtonBorderDisabled
+ImmersiveControlLightAppButtonBorderHover                 : value=0x011b kind=light rival=ImmersiveControlDarkAppButtonBorderHover
+ImmersiveControlLightAppButtonBorderPressed               : value=0x011c kind=light rival=ImmersiveControlDarkAppButtonBorderPressed
+ImmersiveControlLightAppButtonBorderRest                  : value=0x011d kind=light rival=ImmersiveControlDarkAppButtonBorderRest
+ImmersiveControlLightAppButtonTextDisabled                : value=0x011e kind=light rival=ImmersiveControlDarkAppButtonTextDisabled
+ImmersiveControlLightAppButtonTextHover                   : value=0x011f kind=light rival=ImmersiveControlDarkAppButtonTextHover
+ImmersiveControlLightAppButtonTextPressed                 : value=0x0120 kind=light rival=ImmersiveControlDarkAppButtonTextPressed
+ImmersiveControlLightAppButtonTextRest                    : value=0x0121 kind=light rival=ImmersiveControlDarkAppButtonTextRest
+ImmersiveControlLightButtonBackgroundDisabled             : value=0x0122 kind=light rival=ImmersiveControlDarkButtonBackgroundDisabled
+ImmersiveControlLightButtonBackgroundHover                : value=0x0123 kind=light rival=ImmersiveControlDarkButtonBackgroundHover
+ImmersiveControlLightButtonBackgroundPressed              : value=0x0124 kind=light rival=ImmersiveControlDarkButtonBackgroundPressed
+ImmersiveControlLightButtonBackgroundRest                 : value=0x0125 kind=light rival=ImmersiveControlDarkButtonBackgroundRest
+ImmersiveControlLightButtonBorderDisabled                 : value=0x0126 kind=light rival=ImmersiveControlDarkButtonBorderDisabled
+ImmersiveControlLightButtonBorderHover                    : value=0x0127 kind=light rival=ImmersiveControlDarkButtonBorderHover
+ImmersiveControlLightButtonBorderPressed                  : value=0x0128 kind=light rival=ImmersiveControlDarkButtonBorderPressed
+ImmersiveControlLightButtonBorderRest                     : value=0x0129 kind=light rival=ImmersiveControlDarkButtonBorderRest
+ImmersiveControlLightButtonTextDisabled                   : value=0x012a kind=light rival=ImmersiveControlDarkButtonTextDisabled
+ImmersiveControlLightButtonTextHover                      : value=0x012b kind=light rival=ImmersiveControlDarkButtonTextHover
+ImmersiveControlLightButtonTextPressed                    : value=0x012c kind=light rival=ImmersiveControlDarkButtonTextPressed
+ImmersiveControlLightButtonTextRest                       : value=0x012d kind=light rival=ImmersiveControlDarkButtonTextRest
+ImmersiveControlLightCheckboxBackgroundDisabled           : value=0x012e kind=light rival=ImmersiveControlDarkCheckboxBackgroundDisabled
+ImmersiveControlLightCheckboxBackgroundHover              : value=0x012f kind=light rival=ImmersiveControlDarkCheckboxBackgroundHover
+ImmersiveControlLightCheckboxBackgroundPressed            : value=0x0130 kind=light rival=ImmersiveControlDarkCheckboxBackgroundPressed
+ImmersiveControlLightCheckboxBackgroundRest               : value=0x0131 kind=light rival=ImmersiveControlDarkCheckboxBackgroundRest
+ImmersiveControlLightCheckboxBorderDisabled               : value=0x0132 kind=light rival=ImmersiveControlDarkCheckboxBorderDisabled
+ImmersiveControlLightCheckboxBorderHover                  : value=0x0133 kind=light rival=ImmersiveControlDarkCheckboxBorderHover
+ImmersiveControlLightCheckboxBorderPressed                : value=0x0134 kind=light rival=ImmersiveControlDarkCheckboxBorderPressed
+ImmersiveControlLightCheckboxBorderRest                   : value=0x0135 kind=light rival=ImmersiveControlDarkCheckboxBorderRest
+ImmersiveControlLightCheckboxGlyphDisabled                : value=0x0136 kind=light rival=ImmersiveControlDarkCheckboxGlyphDisabled
+ImmersiveControlLightCheckboxGlyphHover                   : value=0x0137 kind=light rival=ImmersiveControlDarkCheckboxGlyphHover
+ImmersiveControlLightCheckboxGlyphPressed                 : value=0x0138 kind=light rival=ImmersiveControlDarkCheckboxGlyphPressed
+ImmersiveControlLightCheckboxGlyphRest                    : value=0x0139 kind=light rival=ImmersiveControlDarkCheckboxGlyphRest
+ImmersiveControlLightCheckboxLabelDisabled                : value=0x013a kind=light rival=ImmersiveControlDarkCheckboxLabelDisabled
+ImmersiveControlLightCheckboxLabelHover                   : value=0x013b kind=light rival=ImmersiveControlDarkCheckboxLabelHover
+ImmersiveControlLightCheckboxLabelPressed                 : value=0x013c kind=light rival=ImmersiveControlDarkCheckboxLabelPressed
+ImmersiveControlLightCheckboxLabelRest                    : value=0x013d kind=light rival=ImmersiveControlDarkCheckboxLabelRest
+ImmersiveControlLightFocusRect                            : value=0x013e kind=light rival=ImmersiveControlDarkFocusRect
+ImmersiveControlLightLinkDisabled                         : value=0x013f kind=light rival=ImmersiveControlDarkLinkDisabled
+ImmersiveControlLightLinkHover                            : value=0x0140 kind=light rival=ImmersiveControlDarkLinkHover
+ImmersiveControlLightLinkPressed                          : value=0x0141 kind=light rival=ImmersiveControlDarkLinkPressed
+ImmersiveControlLightLinkRest                             : value=0x0142 kind=light rival=ImmersiveControlDarkLinkRest
+ImmersiveControlLightLinkVisited                          : value=0x0143 kind=light rival=ImmersiveControlDarkLinkVisited
+ImmersiveControlLightPanningIndicator                     : value=0x0144 kind=light rival=ImmersiveControlDarkPanningIndicator
+ImmersiveControlLightProgressBackground                   : value=0x0145 kind=light rival=ImmersiveControlDarkProgressBackground
+ImmersiveControlLightProgressForeground                   : value=0x0146 kind=light rival=ImmersiveControlDarkProgressForeground
+ImmersiveControlLightRadioButtonLabelDisabled             : value=0x0147 kind=light
+ImmersiveControlLightRadioButtonLabelRest                 : value=0x0148 kind=light
+ImmersiveControlLightRadioButtonSelectedBackgroundDisabled : value=0x0149 kind=light
+ImmersiveControlLightRadioButtonSelectedBackgroundDown     : value=0x014a kind=light
+ImmersiveControlLightRadioButtonSelectedBackgroundHover    : value=0x014b kind=light
+ImmersiveControlLightRadioButtonSelectedBackgroundRest     : value=0x014c kind=light
+ImmersiveControlLightRadioButtonSelectedBackgroundUp       : value=0x014d kind=light
+ImmersiveControlLightRadioButtonSelectedBorderDisabled     : value=0x014e kind=light
+ImmersiveControlLightRadioButtonSelectedBorderDown         : value=0x014f kind=light
+ImmersiveControlLightRadioButtonSelectedBorderHover        : value=0x0150 kind=light
+ImmersiveControlLightRadioButtonSelectedBorderRest         : value=0x0151 kind=light
+ImmersiveControlLightRadioButtonSelectedBorderUp           : value=0x0152 kind=light
+ImmersiveControlLightRadioButtonSelectedGlyphDisabled      : value=0x0153 kind=light
+ImmersiveControlLightRadioButtonSelectedGlyphDown          : value=0x0154 kind=light
+ImmersiveControlLightRadioButtonSelectedGlyphHover         : value=0x0155 kind=light
+ImmersiveControlLightRadioButtonSelectedGlyphRest          : value=0x0156 kind=light
+ImmersiveControlLightRadioButtonSelectedGlyphUp            : value=0x0157 kind=light
+ImmersiveControlLightRadioButtonUnselectedBackgroundDisabled : value=0x0158 kind=light
+ImmersiveControlLightRadioButtonUnselectedBackgroundDown     : value=0x0159 kind=light
+ImmersiveControlLightRadioButtonUnselectedBackgroundHover    : value=0x015a kind=light
+ImmersiveControlLightRadioButtonUnselectedBackgroundRest     : value=0x015b kind=light
+ImmersiveControlLightRadioButtonUnselectedBackgroundUp       : value=0x015c kind=light
+ImmersiveControlLightRadioButtonUnselectedBorderDisabled     : value=0x015d kind=light
+ImmersiveControlLightRadioButtonUnselectedBorderDown         : value=0x015e kind=light
+ImmersiveControlLightRadioButtonUnselectedBorderHover        : value=0x015f kind=light
+ImmersiveControlLightRadioButtonUnselectedBorderRest         : value=0x0160 kind=light
+ImmersiveControlLightRadioButtonUnselectedBorderUp           : value=0x0161 kind=light
+ImmersiveControlLightRadioButtonUnselectedGlyphDisabled      : value=0x0162 kind=light
+ImmersiveControlLightRadioButtonUnselectedGlyphDown          : value=0x0163 kind=light
+ImmersiveControlLightRadioButtonUnselectedGlyphHover         : value=0x0164 kind=light
+ImmersiveControlLightRadioButtonUnselectedGlyphRest          : value=0x0165 kind=light
+ImmersiveControlLightRadioButtonUnselectedGlyphUp            : value=0x0166 kind=light
+ImmersiveControlLightRichEditBackgroundDisabled              : value=0x0167 kind=light rival=ImmersiveControlDarkRichEditBackgroundDisabled
+ImmersiveControlLightRichEditBackgroundFocus                 : value=0x0168 kind=light rival=ImmersiveControlDarkRichEditBackgroundFocus
+ImmersiveControlLightRichEditBackgroundHover                 : value=0x0169 kind=light rival=ImmersiveControlDarkRichEditBackgroundHover
+ImmersiveControlLightRichEditBackgroundPressed               : value=0x016a kind=light rival=ImmersiveControlDarkRichEditBackgroundPressed
+ImmersiveControlLightRichEditBackgroundRest                  : value=0x016b kind=light rival=ImmersiveControlDarkRichEditBackgroundRest
+ImmersiveControlLightRichEditBorderDisabled                  : value=0x016c kind=light rival=ImmersiveControlDarkRichEditBorderDisabled
+ImmersiveControlLightRichEditBorderFocus                     : value=0x016d kind=light rival=ImmersiveControlDarkRichEditBorderFocus
+ImmersiveControlLightRichEditBorderHover                     : value=0x016e kind=light rival=ImmersiveControlDarkRichEditBorderHover
+ImmersiveControlLightRichEditBorderPressed                   : value=0x016f kind=light rival=ImmersiveControlDarkRichEditBorderPressed
+ImmersiveControlLightRichEditBorderRest                      : value=0x0170 kind=light rival=ImmersiveControlDarkRichEditBorderRest
+ImmersiveControlLightRichEditButtonBackgroundHover           : value=0x0171 kind=light rival=ImmersiveControlDarkRichEditButtonBackgroundHover
+ImmersiveControlLightRichEditButtonBackgroundPressed         : value=0x0172 kind=light rival=ImmersiveControlDarkRichEditButtonBackgroundPressed
+ImmersiveControlLightRichEditButtonBackgroundRest            : value=0x0173 kind=light rival=ImmersiveControlDarkRichEditButtonBackgroundRest
+ImmersiveControlLightRichEditButtonGlyphHover                : value=0x0174 kind=light rival=ImmersiveControlDarkRichEditButtonGlyphHover
+ImmersiveControlLightRichEditButtonGlyphPressed              : value=0x0175 kind=light rival=ImmersiveControlDarkRichEditButtonGlyphPressed
+ImmersiveControlLightRichEditButtonGlyphRest                 : value=0x0176 kind=light rival=ImmersiveControlDarkRichEditButtonGlyphRest
+ImmersiveControlLightRichEditHighlight                       : value=0x0177 kind=light rival=ImmersiveControlDarkRichEditHighlight
+ImmersiveControlLightRichEditPromptTextDisabled              : value=0x0178 kind=light rival=ImmersiveControlDarkRichEditPromptTextDisabled
+ImmersiveControlLightRichEditPromptTextFocus                 : value=0x0179 kind=light rival=ImmersiveControlDarkRichEditPromptTextFocus
+ImmersiveControlLightRichEditPromptTextRest                  : value=0x017a kind=light rival=ImmersiveControlDarkRichEditPromptTextRest
+ImmersiveControlLightRichEditTextDisabled                    : value=0x017b kind=light rival=ImmersiveControlDarkRichEditTextDisabled
+ImmersiveControlLightRichEditTextFocus                       : value=0x017c kind=light rival=ImmersiveControlDarkRichEditTextFocus
+ImmersiveControlLightRichEditTextHelper                      : value=0x017d kind=light rival=ImmersiveControlDarkRichEditTextHelper
+ImmersiveControlLightRichEditTextHighlighted                 : value=0x017e kind=light rival=ImmersiveControlDarkRichEditTextHighlighted
+ImmersiveControlLightRichEditTextHover                       : value=0x017f kind=light rival=ImmersiveControlDarkRichEditTextHover
+ImmersiveControlLightRichEditTextRest                        : value=0x0180 kind=light rival=ImmersiveControlDarkRichEditTextRest
+ImmersiveControlLightRoundButtonFillLayerDisabled            : value=0x0181 kind=light rival=ImmersiveControlDarkRoundButtonFillLayerDisabled
+ImmersiveControlLightRoundButtonFillLayerHover               : value=0x0182 kind=light rival=ImmersiveControlDarkRoundButtonFillLayerHover
+ImmersiveControlLightRoundButtonFillLayerPressed             : value=0x0183 kind=light rival=ImmersiveControlDarkRoundButtonFillLayerPressed
+ImmersiveControlLightRoundButtonFillLayerRest                : value=0x0184 kind=light rival=ImmersiveControlDarkRoundButtonFillLayerRest
+ImmersiveControlLightRoundButtonGlyphDisabled                : value=0x0185 kind=light rival=ImmersiveControlDarkRoundButtonGlyphDisabled
+ImmersiveControlLightRoundButtonGlyphLayerHover              : value=0x0186 kind=light rival=ImmersiveControlDarkRoundButtonGlyphLayerHover
+ImmersiveControlLightRoundButtonGlyphLayerPressed            : value=0x0187 kind=light rival=ImmersiveControlDarkRoundButtonGlyphLayerPressed
+ImmersiveControlLightRoundButtonGlyphLayerRest               : value=0x0188 kind=light rival=ImmersiveControlDarkRoundButtonGlyphLayerRest
+ImmersiveControlLightRoundButtonOutlineDisabled              : value=0x0189 kind=light rival=ImmersiveControlDarkRoundButtonOutlineDisabled
+ImmersiveControlLightRoundButtonOutlineLayerHover            : value=0x018a kind=light rival=ImmersiveControlDarkRoundButtonOutlineLayerHover
+ImmersiveControlLightRoundButtonOutlineLayerPressed          : value=0x018b kind=light rival=ImmersiveControlDarkRoundButtonOutlineLayerPressed
+ImmersiveControlLightRoundButtonOutlineLayerRest             : value=0x018c kind=light rival=ImmersiveControlDarkRoundButtonOutlineLayerRest
+ImmersiveControlLightScrollbarButtonGlyphHover               : value=0x018d kind=light rival=ImmersiveControlDarkScrollbarButtonGlyphHover
+ImmersiveControlLightScrollbarButtonGlyphPressed             : value=0x018e kind=light rival=ImmersiveControlDarkScrollbarButtonGlyphPressed
+ImmersiveControlLightScrollbarButtonGlyphRest                : value=0x018f kind=light rival=ImmersiveControlDarkScrollbarButtonGlyphRest
+ImmersiveControlLightScrollbarButtonHover                    : value=0x0190 kind=light rival=ImmersiveControlDarkScrollbarButtonHover
+ImmersiveControlLightScrollbarButtonPressed                  : value=0x0191 kind=light rival=ImmersiveControlDarkScrollbarButtonPressed
+ImmersiveControlLightScrollbarButtonRest                     : value=0x0192 kind=light rival=ImmersiveControlDarkScrollbarButtonRest
+ImmersiveControlLightScrollbarThumbHover                     : value=0x0193 kind=light rival=ImmersiveControlDarkScrollbarThumbHover
+ImmersiveControlLightScrollbarThumbPressed                   : value=0x0194 kind=light rival=ImmersiveControlDarkScrollbarThumbPressed
+ImmersiveControlLightScrollbarThumbRest                      : value=0x0195 kind=light rival=ImmersiveControlDarkScrollbarThumbRest
+ImmersiveControlLightScrollbarTrack                          : value=0x0196 kind=light rival=ImmersiveControlDarkScrollbarTrack
+ImmersiveControlLightSelectBackgroundDisabled                : value=0x0197 kind=light rival=ImmersiveControlDarkSelectBackgroundDisabled
+ImmersiveControlLightSelectBackgroundHover                   : value=0x0198 kind=light rival=ImmersiveControlDarkSelectBackgroundHover
+ImmersiveControlLightSelectBackgroundPressed                 : value=0x0199 kind=light rival=ImmersiveControlDarkSelectBackgroundPressed
+ImmersiveControlLightSelectBackgroundRest                    : value=0x019a kind=light rival=ImmersiveControlDarkSelectBackgroundRest
+ImmersiveControlLightSelectBorderDisabled                    : value=0x019b kind=light rival=ImmersiveControlDarkSelectBorderDisabled
+ImmersiveControlLightSelectBorderHover                       : value=0x019c kind=light rival=ImmersiveControlDarkSelectBorderHover
+ImmersiveControlLightSelectBorderPressed                     : value=0x019d kind=light rival=ImmersiveControlDarkSelectBorderPressed
+ImmersiveControlLightSelectBorderRest                        : value=0x019e kind=light rival=ImmersiveControlDarkSelectBorderRest
+ImmersiveControlLightSelectGlyphDisabled                     : value=0x019f kind=light rival=ImmersiveControlDarkSelectGlyphDisabled
+ImmersiveControlLightSelectGlyphRest                         : value=0x01a0 kind=light rival=ImmersiveControlDarkSelectGlyphRest
+ImmersiveControlLightSelectHighlightedTextPressed            : value=0x01a1 kind=light rival=ImmersiveControlDarkSelectHighlightedTextPressed
+ImmersiveControlLightSelectHighlightHover                    : value=0x01a2 kind=light rival=ImmersiveControlDarkSelectHighlightHover
+ImmersiveControlLightSelectHighlightPressed                  : value=0x01a3 kind=light rival=ImmersiveControlDarkSelectHighlightPressed
+ImmersiveControlLightSelectHighlightSelected                 : value=0x01a4 kind=light rival=ImmersiveControlDarkSelectHighlightSelected
+ImmersiveControlLightSelectHighlightSelectedHover            : value=0x01a5 kind=light rival=ImmersiveControlDarkSelectHighlightSelectedHover
+ImmersiveControlLightSelectPopupBackgroundDisabled           : value=0x01a6 kind=light rival=ImmersiveControlDarkSelectPopupBackgroundDisabled
+ImmersiveControlLightSelectPopupBackgroundHover              : value=0x01a7 kind=light rival=ImmersiveControlDarkSelectPopupBackgroundHover
+ImmersiveControlLightSelectPopupBackgroundPressed            : value=0x01a8 kind=light rival=ImmersiveControlDarkSelectPopupBackgroundPressed
+ImmersiveControlLightSelectPopupBackgroundRest               : value=0x01a9 kind=light rival=ImmersiveControlDarkSelectPopupBackgroundRest
+ImmersiveControlLightSelectPopupBackgroundSelected           : value=0x01aa kind=light rival=ImmersiveControlDarkSelectPopupBackgroundSelected
+ImmersiveControlLightSelectPopupBorder                       : value=0x01ab kind=light rival=ImmersiveControlDarkSelectPopupBorder
+ImmersiveControlLightSelectPopupTextDisabled                 : value=0x01ac kind=light rival=ImmersiveControlDarkSelectPopupTextDisabled
+ImmersiveControlLightSelectPopupTextHover                    : value=0x01ad kind=light rival=ImmersiveControlDarkSelectPopupTextHover
+ImmersiveControlLightSelectPopupTextPressed                  : value=0x01ae kind=light rival=ImmersiveControlDarkSelectPopupTextPressed
+ImmersiveControlLightSelectPopupTextRest                     : value=0x01af kind=light rival=ImmersiveControlDarkSelectPopupTextRest
+ImmersiveControlLightSelectPopupTextSelected                 : value=0x01b0 kind=light rival=ImmersiveControlDarkSelectPopupTextSelected
+ImmersiveControlLightSelectTextDisabled                      : value=0x01b1 kind=light rival=ImmersiveControlDarkSelectTextDisabled
+ImmersiveControlLightSelectTextHighlighted                   : value=0x01b2 kind=light rival=ImmersiveControlDarkSelectTextHighlighted
+ImmersiveControlLightSelectTextHover                         : value=0x01b3 kind=light rival=ImmersiveControlDarkSelectTextHover
+ImmersiveControlLightSelectTextPressed                       : value=0x01b4 kind=light rival=ImmersiveControlDarkSelectTextPressed
+ImmersiveControlLightSelectTextRest                          : value=0x01b5 kind=light rival=ImmersiveControlDarkSelectTextRest
+ImmersiveControlLightSliderBorder                            : value=0x01b6 kind=light rival=ImmersiveControlDarkSliderBorder
+ImmersiveControlLightSliderThumbBorder                       : value=0x01b7 kind=light rival=ImmersiveControlDarkSliderThumbBorder
+ImmersiveControlLightSliderThumbBorderDisabled               : value=0x01b8 kind=light rival=ImmersiveControlDarkSliderThumbBorderDisabled
+ImmersiveControlLightSliderThumbBorderHover                  : value=0x01b9 kind=light rival=ImmersiveControlDarkSliderThumbBorderHover
+ImmersiveControlLightSliderThumbBorderPressed                : value=0x01ba kind=light rival=ImmersiveControlDarkSliderThumbBorderPressed
+ImmersiveControlLightSliderThumbBorderRest                   : value=0x01bb kind=light rival=ImmersiveControlDarkSliderThumbBorderRest
+ImmersiveControlLightSliderThumbDisabled                     : value=0x01bc kind=light rival=ImmersiveControlDarkSliderThumbDisabled
+ImmersiveControlLightSliderThumbHover                        : value=0x01bd kind=light rival=ImmersiveControlDarkSliderThumbHover
+ImmersiveControlLightSliderThumbPressed                      : value=0x01be kind=light rival=ImmersiveControlDarkSliderThumbPressed
+ImmersiveControlLightSliderThumbRest                         : value=0x01bf kind=light rival=ImmersiveControlDarkSliderThumbRest
+ImmersiveControlLightSliderTickMark                          : value=0x01c0 kind=light rival=ImmersiveControlDarkSliderTickMark
+ImmersiveControlLightSliderTrackBackgroundDisabled           : value=0x01c1 kind=light rival=ImmersiveControlDarkSliderTrackBackgroundDisabled
+ImmersiveControlLightSliderTrackBackgroundHover              : value=0x01c2 kind=light rival=ImmersiveControlDarkSliderTrackBackgroundHover
+ImmersiveControlLightSliderTrackBackgroundPressed            : value=0x01c3 kind=light rival=ImmersiveControlDarkSliderTrackBackgroundPressed
+ImmersiveControlLightSliderTrackBackgroundRest               : value=0x01c4 kind=light rival=ImmersiveControlDarkSliderTrackBackgroundRest
+ImmersiveControlLightSliderTrackBufferingDisabled            : value=0x01c5 kind=light rival=ImmersiveControlDarkSliderTrackBufferingDisabled
+ImmersiveControlLightSliderTrackBufferingHover               : value=0x01c6 kind=light rival=ImmersiveControlDarkSliderTrackBufferingHover
+ImmersiveControlLightSliderTrackBufferingPressed             : value=0x01c7 kind=light rival=ImmersiveControlDarkSliderTrackBufferingPressed
+ImmersiveControlLightSliderTrackBufferingRest                : value=0x01c8 kind=light rival=ImmersiveControlDarkSliderTrackBufferingRest
+ImmersiveControlLightSliderTrackFillDisabled                 : value=0x01c9 kind=light rival=ImmersiveControlDarkSliderTrackFillDisabled
+ImmersiveControlLightSliderTrackFillHover                    : value=0x01ca kind=light rival=ImmersiveControlDarkSliderTrackFillHover
+ImmersiveControlLightSliderTrackFillPressed                  : value=0x01cb kind=light rival=ImmersiveControlDarkSliderTrackFillPressed
+ImmersiveControlLightSliderTrackFillRest                     : value=0x01cc kind=light rival=ImmersiveControlDarkSliderTrackFillRest
+ImmersiveControlLightToggleLabelDisabled                     : value=0x01cd kind=light rival=ImmersiveControlDarkToggleLabelDisabled
+ImmersiveControlLightToggleLabelEnabled                      : value=0x01ce kind=light rival=ImmersiveControlDarkToggleLabelEnabled
+ImmersiveControlLightToggleOnOffTextDisabled                 : value=0x01cf kind=light rival=ImmersiveControlDarkToggleOnOffTextDisabled
+ImmersiveControlLightToggleOnOffTextEnabled                  : value=0x01d0 kind=light rival=ImmersiveControlDarkToggleOnOffTextEnabled
+ImmersiveControlLightToggleThumbDisabled                     : value=0x01d1 kind=light rival=ImmersiveControlDarkToggleThumbDisabled
+ImmersiveControlLightToggleThumbEnabled                      : value=0x01d2 kind=light rival=ImmersiveControlDarkToggleThumbEnabled
+ImmersiveControlLightToggleTrackBackgroundDisabled           : value=0x01d3 kind=light rival=ImmersiveControlDarkToggleTrackBackgroundDisabled
+ImmersiveControlLightToggleTrackBackgroundEnabled            : value=0x01d4 kind=light rival=ImmersiveControlDarkToggleTrackBackgroundEnabled
+ImmersiveControlLightToggleTrackBackgroundHover              : value=0x01d5 kind=light rival=ImmersiveControlDarkToggleTrackBackgroundHover
+ImmersiveControlLightToggleTrackBackgroundPressed            : value=0x01d6 kind=light rival=ImmersiveControlDarkToggleTrackBackgroundPressed
+ImmersiveControlLightToggleTrackBackgroundRest               : value=0x01d7 kind=light rival=ImmersiveControlDarkToggleTrackBackgroundRest
+ImmersiveControlLightToggleTrackBorderDisabled               : value=0x01d8 kind=light rival=ImmersiveControlDarkToggleTrackBorderDisabled
+ImmersiveControlLightToggleTrackBorderEnabled                : value=0x01d9 kind=light rival=ImmersiveControlDarkToggleTrackBorderEnabled
+ImmersiveControlLightToggleTrackFillDisabled                 : value=0x01da kind=light rival=ImmersiveControlDarkToggleTrackFillDisabled
+ImmersiveControlLightToggleTrackFillEnabled                  : value=0x01db kind=light rival=ImmersiveControlDarkToggleTrackFillEnabled
+ImmersiveControlLightToggleTrackFillHover                    : value=0x01dc kind=light rival=ImmersiveControlDarkToggleTrackFillHover
+ImmersiveControlLightToggleTrackFillPressed                  : value=0x01dd kind=light rival=ImmersiveControlDarkToggleTrackFillPressed
+ImmersiveControlLightToggleTrackFillRest                     : value=0x01de kind=light rival=ImmersiveControlDarkToggleTrackFillRest
+ImmersiveControlLightToggleTrackGutterDisabled               : value=0x01df kind=light rival=ImmersiveControlDarkToggleTrackGutterDisabled
+ImmersiveControlLightToggleTrackGutterEnabled                : value=0x01e0 kind=light rival=ImmersiveControlDarkToggleTrackGutterEnabled
+ImmersiveControlProgressBorder                               : value=0x01e1
+ImmersiveControlRadioButtonBackgroundDisabledHover           : value=0x01e2
+ImmersiveControlRadioButtonBackgroundDisabledPressed         : value=0x01e3
+ImmersiveControlRadioButtonBackgroundDisabledSelected        : value=0x01e4
+ImmersiveControlRadioButtonBackgroundSelected                : value=0x01e5
+ImmersiveControlRadioButtonBorder                            : value=0x01e6
+ImmersiveControlRadioButtonSeparator                         : value=0x01e7
+ImmersiveControlRadioButtonTextDisabledHover                 : value=0x01e8
+ImmersiveControlRadioButtonTextDisabledPressed               : value=0x01e9
+ImmersiveControlRadioButtonTextDisabledSelected              : value=0x01ea
+ImmersiveControlRadioButtonTextSelected                      : value=0x01eb
+ImmersiveControlScrollbarBackground                          : value=0x01ec
+ImmersiveControlScrollbarButtonBackgroundHover               : value=0x01ed
+ImmersiveControlScrollbarButtonBackgroundPressed             : value=0x01ee
+ImmersiveControlScrollbarButtonBackgroundRest                : value=0x01ef
+ImmersiveControlScrollbarButtonBorderHover                   : value=0x01f0
+ImmersiveControlScrollbarButtonBorderPressed                 : value=0x01f1
+ImmersiveControlScrollbarButtonBorderRest                    : value=0x01f2
+ImmersiveControlScrollbarButtonForegroundHover               : value=0x01f3
+ImmersiveControlScrollbarButtonForegroundPressed             : value=0x01f4
+ImmersiveControlScrollbarButtonForegroundRest                : value=0x01f5
+ImmersiveControlScrollbarPanningIndicatorBackground          : value=0x01f6
+ImmersiveControlScrollbarPanningIndicatorBorder              : value=0x01f7
+ImmersiveControlScrollbarThumbBackgroundHover                : value=0x01f8
+ImmersiveControlScrollbarThumbBackgroundPressed              : value=0x01f9
+ImmersiveControlScrollbarThumbBackgroundRest                 : value=0x01fa
+ImmersiveControlScrollbarThumbBorderHover                    : value=0x01fb
+ImmersiveControlScrollbarThumbBorderPressed                  : value=0x01fc
+ImmersiveControlScrollbarThumbBorderRest                     : value=0x01fd
+ImmersiveControlScrollbarTrackBorder                         : value=0x01fe
+ImmersiveControlSkydriveCommerceBackground                   : value=0x01ff
+ImmersiveControlSkydriveCommerceDefaultButtonBackground      : value=0x0200
+ImmersiveControlSliderTooltipText                            : value=0x0201
+ImmersiveControlSystemTileBorder                             : value=0x0202
+ImmersiveControlTooltipBackground                            : value=0x0203
+ImmersiveControlTooltipBorder                                : value=0x0204
+ImmersiveControlTooltipDomainText                            : value=0x0205
+ImmersiveControlTooltipText                                  : value=0x0206
+ImmersiveControlTransparent                                  : value=0x0207
+ImmersiveDarkAltHigh                                         : value=0x0208 kind=dark rival=ImmersiveLightAltHigh
+ImmersiveDarkAltLow                                          : value=0x0209 kind=dark rival=ImmersiveLightAltLow
+ImmersiveDarkAltMedium                                       : value=0x020a kind=dark rival=ImmersiveLightAltMedium
+ImmersiveDarkAltMediumHigh                                   : value=0x020b kind=dark rival=ImmersiveLightAltMediumHigh
+ImmersiveDarkAltMediumLow                                    : value=0x020c kind=dark rival=ImmersiveLightAltMediumLow
+ImmersiveDarkBaseHigh                                        : value=0x020d kind=dark rival=ImmersiveLightBaseHigh
+ImmersiveDarkBaseLow                                         : value=0x020e kind=dark rival=ImmersiveLightBaseLow
+ImmersiveDarkBaseMedium                                      : value=0x020f kind=dark rival=ImmersiveLightBaseMedium
+ImmersiveDarkBaseMediumHigh                                  : value=0x0210 kind=dark rival=ImmersiveLightBaseMediumHigh
+ImmersiveDarkBaseMediumLow                                   : value=0x0211 kind=dark rival=ImmersiveLightBaseMediumLow
+ImmersiveDarkChromeAltLow                                    : value=0x0212 kind=dark rival=ImmersiveLightChromeAltLow
+ImmersiveDarkChromeBlackHigh                                 : value=0x0213 kind=dark rival=ImmersiveLightChromeBlackHigh
+ImmersiveDarkChromeBlackLow                                  : value=0x0214 kind=dark rival=ImmersiveLightChromeBlackLow
+ImmersiveDarkChromeBlackMedium                               : value=0x0215 kind=dark rival=ImmersiveLightChromeBlackMedium
+ImmersiveDarkChromeBlackMediumLow                            : value=0x0216 kind=dark rival=ImmersiveLightChromeBlackMediumLow
+ImmersiveDarkChromeDisabledHigh                              : value=0x0217 kind=dark rival=ImmersiveLightChromeDisabledHigh
+ImmersiveDarkChromeDisabledLow                               : value=0x0218 kind=dark rival=ImmersiveLightChromeDisabledLow
+ImmersiveDarkChromeHigh                                      : value=0x0219 kind=dark rival=ImmersiveLightChromeHigh
+ImmersiveDarkChromeLow                                       : value=0x021a kind=dark rival=ImmersiveLightChromeLow
+ImmersiveDarkChromeMedium                                    : value=0x021b kind=dark rival=ImmersiveLightChromeMedium
+ImmersiveDarkChromeMediumLow                                 : value=0x021c kind=dark rival=ImmersiveLightChromeMediumLow
+ImmersiveDarkChromeTaskbarBase                               : value=0x021d kind=dark rival=ImmersiveLightChromeTaskbarBase
+ImmersiveDarkChromeWhite                                     : value=0x021e kind=dark rival=ImmersiveLightChromeWhite
+ImmersiveDarkListAccentHigh                                  : value=0x021f kind=dark rival=ImmersiveLightListAccentHigh
+ImmersiveDarkListAccentLow                                   : value=0x0220 kind=dark rival=ImmersiveLightListAccentLow
+ImmersiveDarkListAccentMedium                                : value=0x0221 kind=dark rival=ImmersiveLightListAccentMedium
+ImmersiveDarkListLow                                         : value=0x0222 kind=dark rival=ImmersiveLightListLow
+ImmersiveDarkListMedium                                      : value=0x0223 kind=dark rival=ImmersiveLightListMedium
+ImmersiveFilesAppAppBarBackground                            : value=0x0224
+ImmersiveFilesAppAppBarForeground                            : value=0x0225
+ImmersiveFilesAppAppBarHighContrastBorder                    : value=0x0226
+ImmersiveFilesAppBackground                                  : value=0x0227
+ImmersiveFilesAppCommandRowDisabled                          : value=0x0228
+ImmersiveFilesAppCommandRowHighlight                         : value=0x0229
+ImmersiveFilesAppCommandRowHover                             : value=0x022a
+ImmersiveFilesAppCommandRowPressed                           : value=0x022b
+ImmersiveFilesAppCommandRowRest                              : value=0x022c
+ImmersiveFilesAppDarkLinkText                                : value=0x022d kind=dark rival=ImmersiveFilesAppLightLinkText
+ImmersiveFilesAppDarkLinkTextDisabled                        : value=0x022e kind=dark rival=ImmersiveFilesAppLightLinkTextDisabled
+ImmersiveFilesAppDarkLinkTextHover                           : value=0x022f kind=dark rival=ImmersiveFilesAppLightLinkTextHover
+ImmersiveFilesAppDarkLinkTextPressed                         : value=0x0230 kind=dark rival=ImmersiveFilesAppLightLinkTextPressed
+ImmersiveFilesAppDefaultButtonBackgroundHover                : value=0x0231
+ImmersiveFilesAppDefaultButtonBackgroundPressed              : value=0x0232
+ImmersiveFilesAppDefaultButtonBackgroundRest                 : value=0x0233
+ImmersiveFilesAppDefaultButtonBorderHover                    : value=0x0234
+ImmersiveFilesAppDefaultButtonBorderPressed                  : value=0x0235
+ImmersiveFilesAppDefaultButtonBorderRest                     : value=0x0236
+ImmersiveFilesAppDefaultButtonTextHover                      : value=0x0237
+ImmersiveFilesAppDefaultButtonTextPressed                    : value=0x0238
+ImmersiveFilesAppDefaultButtonTextRest                       : value=0x0239
+ImmersiveFilesAppFolderHighContrastBorder                    : value=0x023a
+ImmersiveFilesAppFolderHoverPrimaryText                      : value=0x023b
+ImmersiveFilesAppFolderPrimaryText                           : value=0x023c
+ImmersiveFilesAppFolderSelectionHoverPrimaryText             : value=0x023d
+ImmersiveFilesAppFolderSelectionPrimaryText                  : value=0x023e
+ImmersiveFilesAppHoverBackground                             : value=0x023f
+ImmersiveFilesAppItemBackground                              : value=0x0240
+ImmersiveFilesAppItemPrimaryText                             : value=0x0241
+ImmersiveFilesAppItemSecondaryText                           : value=0x0242
+ImmersiveFilesAppLightErrorText                              : value=0x0243 kind=light
+ImmersiveFilesAppLightLinkText                               : value=0x0244 kind=light rival=ImmersiveFilesAppDarkLinkText
+ImmersiveFilesAppLightLinkTextDisabled                       : value=0x0245 kind=light rival=ImmersiveFilesAppDarkLinkTextDisabled
+ImmersiveFilesAppLightLinkTextHover                          : value=0x0246 kind=light rival=ImmersiveFilesAppDarkLinkTextHover
+ImmersiveFilesAppLightLinkTextPressed                        : value=0x0247 kind=light rival=ImmersiveFilesAppDarkLinkTextPressed
+ImmersiveFilesAppLocalFolderBackground                       : value=0x0248
+ImmersiveFilesAppLocalFolderErrorText                        : value=0x0249
+ImmersiveFilesAppLocalFolderHoverSecondaryText               : value=0x024a
+ImmersiveFilesAppLocalFolderSecondaryText                    : value=0x024b
+ImmersiveFilesAppLocalFolderSelectionHoverSecondaryText      : value=0x024c
+ImmersiveFilesAppLocalFolderSelectionSecondaryText           : value=0x024d
+ImmersiveFilesAppPhotosAppSelectionBackground                : value=0x024e
+ImmersiveFilesAppPickerBackground                            : value=0x024f
+ImmersiveFilesAppPickerButtonBackgroundDisabled              : value=0x0250
+ImmersiveFilesAppPickerButtonBorderDisabled                  : value=0x0251
+ImmersiveFilesAppPickerButtonTextDisabled                    : value=0x0252
+ImmersiveFilesAppPickerDefaultButtonBackgroundHover          : value=0x0253
+ImmersiveFilesAppPickerDefaultButtonBackgroundPressed        : value=0x0254
+ImmersiveFilesAppPickerDefaultButtonBackgroundRest           : value=0x0255
+ImmersiveFilesAppPickerDefaultButtonBorderHover              : value=0x0256
+ImmersiveFilesAppPickerDefaultButtonBorderPressed            : value=0x0257
+ImmersiveFilesAppPickerDefaultButtonBorderRest               : value=0x0258
+ImmersiveFilesAppPickerDefaultButtonTextHover                : value=0x0259
+ImmersiveFilesAppPickerDefaultButtonTextPressed              : value=0x025a
+ImmersiveFilesAppPickerDefaultButtonTextRest                 : value=0x025b
+ImmersiveFilesAppPickerDocumentThumbnailBackground           : value=0x025c
+ImmersiveFilesAppPickerErrorText                             : value=0x025d
+ImmersiveFilesAppPickerHoverBackground                       : value=0x025e
+ImmersiveFilesAppPickerHoverPrimaryText                      : value=0x025f
+ImmersiveFilesAppPickerHoverSecondaryText                    : value=0x0260
+ImmersiveFilesAppPickerLocalFolderHoverBackground            : value=0x0261
+ImmersiveFilesAppPickerPaneBackground                        : value=0x0262
+ImmersiveFilesAppPickerPaneHighlight                         : value=0x0263
+ImmersiveFilesAppPickerPaneHoverBackground                   : value=0x0264
+ImmersiveFilesAppPickerPaneHoverText                         : value=0x0265
+ImmersiveFilesAppPickerPanePrimaryText                       : value=0x0266
+ImmersiveFilesAppPickerPaneSecondaryText                     : value=0x0267
+ImmersiveFilesAppPickerPrimaryText                           : value=0x0268
+ImmersiveFilesAppPickerSecondaryText                         : value=0x0269
+ImmersiveFilesAppPickerSelectionHoverBackground              : value=0x026a
+ImmersiveFilesAppPickerSelectionHoverPrimaryText             : value=0x026b
+ImmersiveFilesAppPickerSelectionHoverSecondaryText           : value=0x026c
+ImmersiveFilesAppPickerSelectionPrimaryText                  : value=0x026d
+ImmersiveFilesAppPickerSelectionSecondaryText                : value=0x026e
+ImmersiveFilesAppPickerSkyDriveFolderHoverBackground         : value=0x026f
+ImmersiveFilesAppPickerThumbnailPlaceholder                  : value=0x0270
+ImmersiveFilesAppPickerUnavailableText                       : value=0x0271
+ImmersiveFilesAppProgressTrackBackground                     : value=0x0272
+ImmersiveFilesAppProgressTrackFill                           : value=0x0273
+ImmersiveFilesAppSearchBorder                                : value=0x0274
+ImmersiveFilesAppSearchButtonBackground                      : value=0x0275
+ImmersiveFilesAppSearchButtonForeground                      : value=0x0276
+ImmersiveFilesAppSearchPrimaryText                           : value=0x0277
+ImmersiveFilesAppSearchSecondaryText                         : value=0x0278
+ImmersiveFilesAppSelectionBackground                         : value=0x0279
+ImmersiveFilesAppSelectionForeground                         : value=0x027a
+ImmersiveFilesAppSkyDriveEmphasisText                        : value=0x027b
+ImmersiveFilesAppSkyDriveFolderBackground                    : value=0x027c
+ImmersiveFilesAppSkyDriveFolderErrorText                     : value=0x027d
+ImmersiveFilesAppSkyDriveFolderHoverSecondaryText            : value=0x027e
+ImmersiveFilesAppSkyDriveFolderSecondaryText                 : value=0x027f
+ImmersiveFilesAppSkyDriveFolderSelectionHoverSecondaryText   : value=0x0280
+ImmersiveFilesAppSkyDriveFolderSelectionSecondaryText        : value=0x0281
+ImmersiveFilesAppSkyDriveUnavailableText                     : value=0x0282
+ImmersiveFilesAppTabTextDisabled                             : value=0x0283
+ImmersiveFilesAppTabTextHighlight                            : value=0x0284
+ImmersiveFilesAppTabTextHover                                : value=0x0285
+ImmersiveFilesAppTabTextPressed                              : value=0x0286
+ImmersiveFilesAppTabTextRest                                 : value=0x0287
+ImmersiveFilesAppThumbnailHighContrastBorder                 : value=0x0288
+ImmersiveFilesAppTouchSelectHighlightSelected                : value=0x0289
+ImmersiveFilesAppTouchSelectHighlightSelectedHover           : value=0x028a
+ImmersiveFilesAppTouchSelectHighlightSelectedHoverText       : value=0x028b
+ImmersiveFilesAppTouchSelectHighlightSelectedText            : value=0x028c
+ImmersiveHardwareAppBarBackground                            : value=0x028d
+ImmersiveHardwareAppSwitcherBackground                       : value=0x028e
+ImmersiveHardwareAppSwitcherHotTrack                         : value=0x028f
+ImmersiveHardwareAppSwitcherTextOverlayBackground            : value=0x0290
+ImmersiveHardwareAppSwitcherThumbnailBorder                  : value=0x0291
+ImmersiveHardwareAppSwitcherThumbnailBorderHover             : value=0x0292
+ImmersiveHardwareButtonDisabled                              : value=0x0293
+ImmersiveHardwareButtonGlyphHover                            : value=0x0294
+ImmersiveHardwareButtonGlyphPressed                          : value=0x0295
+ImmersiveHardwareButtonHover                                 : value=0x0296
+ImmersiveHardwareButtonPressed                               : value=0x0297
+ImmersiveHardwareButtonRest                                  : value=0x0298
+ImmersiveHardwareCharmsBarBackground                         : value=0x0299
+ImmersiveHardwareCharmsBarBackgroundHotTrack                 : value=0x029a
+ImmersiveHardwareCharmsBarBackgroundPressed                  : value=0x029b
+ImmersiveHardwareCharmsBarBackgroundRest                     : value=0x029c
+ImmersiveHardwareCharmsBarFlag                               : value=0x029d
+ImmersiveHardwareCharmsBarLogoWash                           : value=0x029e
+ImmersiveHardwareCharmsBarSelectedText                       : value=0x029f
+ImmersiveHardwareCharmsBarText                               : value=0x02a0
+ImmersiveHardwareCharmsBarTextDisabled                       : value=0x02a1
+ImmersiveHardwareClockBackground                             : value=0x02a2
+ImmersiveHardwareClockText                                   : value=0x02a3
+ImmersiveHardwareControlLink                                 : value=0x02a4
+ImmersiveHardwareControlLinkDisabled                         : value=0x02a5
+ImmersiveHardwareControlLinkMouseHover                       : value=0x02a6
+ImmersiveHardwareControlLinkPressed                          : value=0x02a7
+ImmersiveHardwareControlLinkVisited                          : value=0x02a8
+ImmersiveHardwareCountdownText                               : value=0x02a9
+ImmersiveHardwareCropControlFill                             : value=0x02aa
+ImmersiveHardwareCropControlFillHover                        : value=0x02ab
+ImmersiveHardwareCropControlFillPressed                      : value=0x02ac
+ImmersiveHardwareCropControlOutline                          : value=0x02ad
+ImmersiveHardwareCropControlOutlineHover                     : value=0x02ae
+ImmersiveHardwareCropControlOutlinePressed                   : value=0x02af
+ImmersiveHardwareDarkCandidateControlBackgroundHightlighted  : value=0x02b0 kind=dark
+ImmersiveHardwareDarkCandidateControlBackgroundHover         : value=0x02b1 kind=dark
+ImmersiveHardwareDarkCandidateControlBackgroundPressed       : value=0x02b2 kind=dark
+ImmersiveHardwareDarkCandidateControlBackgroundRest          : value=0x02b3 kind=dark
+ImmersiveHardwareDarkCandidateControlHighlightedSecondaryTextPressed : value=0x02b4 kind=dark
+ImmersiveHardwareDarkCandidateControlHighlightSelected               : value=0x02b5 kind=dark
+ImmersiveHardwareDarkCandidateControlSecondaryTextHighlighted        : value=0x02b6 kind=dark
+ImmersiveHardwareDarkCandidateControlSecondaryTextHover              : value=0x02b7 kind=dark
+ImmersiveHardwareDarkCandidateControlSecondaryTextPressed            : value=0x02b8 kind=dark
+ImmersiveHardwareDarkCandidateControlSecondaryTextRest               : value=0x02b9 kind=dark
+ImmersiveHardwareDarkCandidateControlSecondaryTextSelect             : value=0x02ba kind=dark
+ImmersiveHardwareDarkCandidateControlTextHover                       : value=0x02bb kind=dark
+ImmersiveHardwareDarkCandidateControlTextPressed                     : value=0x02bc kind=dark
+ImmersiveHardwareDarkCandidateControlTextRest                        : value=0x02bd kind=dark
+ImmersiveHardwareDarkCandidateControlTextSelect                      : value=0x02be kind=dark
+ImmersiveHardwareDarkKeyboardBackground                              : value=0x02bf kind=dark
+ImmersiveHardwareDarkKeyboardChildKeyKeyText                         : value=0x02c0 kind=dark
+ImmersiveHardwareDarkKeyboardChildPanelBackground                    : value=0x02c1 kind=dark
+ImmersiveHardwareDarkKeyboardChildPanelKeyBackground                 : value=0x02c2 kind=dark
+ImmersiveHardwareDarkKeyboardEmojiCategoryTextSelected               : value=0x02c3 kind=dark
+ImmersiveHardwareDarkKeyboardFunctionKeyBackground                   : value=0x02c4 kind=dark
+ImmersiveHardwareDarkKeyboardFunctionKeyText                         : value=0x02c5 kind=dark
+ImmersiveHardwareDarkKeyboardFunctionKeyTextDisabled                 : value=0x02c6 kind=dark
+ImmersiveHardwareDarkKeyboardKeyBackgroundHover                      : value=0x02c7 kind=dark
+ImmersiveHardwareDarkKeyboardKeyBackgroundPressed                    : value=0x02c8 kind=dark
+ImmersiveHardwareDarkKeyboardKeyBackgroundRest                       : value=0x02c9 kind=dark
+ImmersiveHardwareDarkKeyboardKeyDefaultBackgroundRest                : value=0x02ca kind=dark
+ImmersiveHardwareDarkKeyboardKeyDefaultPrimaryTextRest               : value=0x02cb kind=dark
+ImmersiveHardwareDarkKeyboardKeyPrimaryTextDisabled                  : value=0x02cc kind=dark
+ImmersiveHardwareDarkKeyboardKeyPrimaryTextHover                     : value=0x02cd kind=dark
+ImmersiveHardwareDarkKeyboardKeyPrimaryTextPressed                   : value=0x02ce kind=dark
+ImmersiveHardwareDarkKeyboardKeyPrimaryTextRest                      : value=0x02cf kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextChildKeyDisabled        : value=0x02d0 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextChildKeyHover           : value=0x02d1 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextChildKeyPressed         : value=0x02d2 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextChildKeyRest            : value=0x02d3 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextModifierKeyDisabled     : value=0x02d4 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextModifierKeyHover        : value=0x02d5 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextModifierKeyPressed      : value=0x02d6 kind=dark
+ImmersiveHardwareDarkKeyboardKeySecondaryTextModifierKeyRest         : value=0x02d7 kind=dark
+ImmersiveHardwareDarkKeyboardNumberKeyBackground                     : value=0x02d8 kind=dark
+ImmersiveHardwareDarkKeyboardNumberKeyText                           : value=0x02d9 kind=dark
+ImmersiveHardwareDarkKeyboardSpaceGripper                            : value=0x02da kind=dark
+ImmersiveHardwareDarkKeyboardThumbCentralNumberKeyBackground         : value=0x02db kind=dark
+ImmersiveHardwareDarkKeyboardThumbCentralNumberKeyText               : value=0x02dc kind=dark
+ImmersiveHardwareDarkKeyboardThumbResizeGripperBackgroundRest        : value=0x02dd kind=dark
+ImmersiveHardwareDarkRoundButtonFillLayerDisabled                    : value=0x02de kind=dark
+ImmersiveHardwareDarkRoundButtonFillLayerHover                       : value=0x02df kind=dark
+ImmersiveHardwareDarkRoundButtonFillLayerPressed                     : value=0x02e0 kind=dark
+ImmersiveHardwareDarkRoundButtonFillLayerRest                        : value=0x02e1 kind=dark
+ImmersiveHardwareDarkRoundButtonGlyphDisabled                        : value=0x02e2 kind=dark
+ImmersiveHardwareDarkRoundButtonGlyphLayerHover                      : value=0x02e3 kind=dark
+ImmersiveHardwareDarkRoundButtonGlyphLayerPressed                    : value=0x02e4 kind=dark
+ImmersiveHardwareDarkRoundButtonGlyphLayerRest                       : value=0x02e5 kind=dark
+ImmersiveHardwareDarkRoundButtonOutlineDisabled                      : value=0x02e6 kind=dark
+ImmersiveHardwareDarkRoundButtonOutlineLayerHover                    : value=0x02e7 kind=dark
+ImmersiveHardwareDarkRoundButtonOutlineLayerPressed                  : value=0x02e8 kind=dark
+ImmersiveHardwareDarkRoundButtonOutlineLayerRest                     : value=0x02e9 kind=dark
+ImmersiveHardwareDefaultKeyboardKeyBackgroundHover                   : value=0x02ea
+ImmersiveHardwareDefaultKeyboardKeyBackgroundRest                    : value=0x02eb
+ImmersiveHardwareDefaultKeyboardKeyPrimaryTextRest                   : value=0x02ec
+ImmersiveHardwareDefaultKeyboardKeySecondaryTextRest                 : value=0x02ed
+ImmersiveHardwareFlipViewFillHover                                   : value=0x02ee
+ImmersiveHardwareFlipViewFillPressed                                 : value=0x02ef
+ImmersiveHardwareFlipViewFillRest                                    : value=0x02f0
+ImmersiveHardwareFlipViewGlyphHover                                  : value=0x02f1
+ImmersiveHardwareFlipViewGlyphPressed                                : value=0x02f2
+ImmersiveHardwareFlipViewGlyphRest                                   : value=0x02f3
+ImmersiveHardwareFlipViewOutlineHover                                : value=0x02f4
+ImmersiveHardwareFlipViewOutlinePressed                              : value=0x02f5
+ImmersiveHardwareFlipViewOutlineRest                                 : value=0x02f6
+ImmersiveHardwareGenericBackground                                   : value=0x02f7
+ImmersiveHardwareGutterBackground                                    : value=0x02f8
+ImmersiveHardwareGutterDown                                          : value=0x02f9
+ImmersiveHardwareGutterIndicator                                     : value=0x02fa
+ImmersiveHardwareGutterRest                                          : value=0x02fb
+ImmersiveHardwareHandwritingPanelBorder                              : value=0x02fc
+ImmersiveHardwareHandwritingPanelButtonBorder                        : value=0x02fd
+ImmersiveHardwareHandwritingPanelButtonHover                         : value=0x02fe
+ImmersiveHardwareHandwritingPanelButtonPress                         : value=0x02ff
+ImmersiveHardwareHandwritingPanelButtonRest                          : value=0x0300
+ImmersiveHardwareHandwritingPanelCharChevronPressed                  : value=0x0301
+ImmersiveHardwareHandwritingPanelCharChevronRest                     : value=0x0302
+ImmersiveHardwareHandwritingPanelConversionHoveredText               : value=0x0303
+ImmersiveHardwareHandwritingPanelConversionSelectedBackground        : value=0x0304
+ImmersiveHardwareHandwritingPanelConversionSelectedText              : value=0x0305
+ImmersiveHardwareHandwritingPanelConversionToggledText               : value=0x0306
+ImmersiveHardwareHandwritingPanelConversionUnselectedBackground      : value=0x0307
+ImmersiveHardwareHandwritingPanelConversionUnselectedText            : value=0x0308
+ImmersiveHardwareHandwritingPanelCorrectionText                      : value=0x0309
+ImmersiveHardwareHandwritingPanelHoverWord                           : value=0x030a
+ImmersiveHardwareHandwritingPanelInsertModeCharacter                 : value=0x030b
+ImmersiveHardwareHandwritingPanelKanjiConversionBackground           : value=0x030c
+ImmersiveHardwareHandwritingPanelKanjiConversionBackgroundHovered    : value=0x030d
+ImmersiveHardwareHandwritingPanelKanjiConversionBorder               : value=0x030e
+ImmersiveHardwareHandwritingPanelKanjiConversionText                 : value=0x030f
+ImmersiveHardwareHandwritingPanelMatchedText                         : value=0x0310
+ImmersiveHardwareHandwritingPanelSuggestedWord                       : value=0x0311
+ImmersiveHardwareHelpStickerAccent                                   : value=0x0312
+ImmersiveHardwareHelpStickerBackground                               : value=0x0313
+ImmersiveHardwareHelpStickerBorder                                   : value=0x0314
+ImmersiveHardwareKeyboardBackground                                  : value=0x0315
+ImmersiveHardwareKeyboardChildKeyKeyText                             : value=0x0316
+ImmersiveHardwareKeyboardChildPanelBackground                        : value=0x0317
+ImmersiveHardwareKeyboardChildPanelKeyBackground                     : value=0x0318
+ImmersiveHardwareKeyboardDarkSpaceKeyBackgroundPressed               : value=0x0319 kind=dark
+ImmersiveHardwareKeyboardEmojiCategoryTextSelected                   : value=0x031a
+ImmersiveHardwareKeyboardFunctionKeyBackground                       : value=0x031b
+ImmersiveHardwareKeyboardFunctionKeyBackgroundHover                  : value=0x031c
+ImmersiveHardwareKeyboardFunctionKeyText                             : value=0x031d
+ImmersiveHardwareKeyboardFunctionKeyTextDisabled                     : value=0x031e
+ImmersiveHardwareKeyboardKeyBackgroundDisabled                       : value=0x031f
+ImmersiveHardwareKeyboardKeyBackgroundHover                          : value=0x0320
+ImmersiveHardwareKeyboardKeyBackgroundPressed                        : value=0x0321
+ImmersiveHardwareKeyboardKeyBackgroundRest                           : value=0x0322
+ImmersiveHardwareKeyboardKeyBorder                                   : value=0x0323
+ImmersiveHardwareKeyboardKeyDockCloseRest                            : value=0x0324
+ImmersiveHardwareKeyboardKeyPrimaryTextDisabled                      : value=0x0325
+ImmersiveHardwareKeyboardKeyPrimaryTextPressed                       : value=0x0326
+ImmersiveHardwareKeyboardKeyPrimaryTextRest                          : value=0x0327
+ImmersiveHardwareKeyboardKeySecondaryTextDisabled                    : value=0x0328
+ImmersiveHardwareKeyboardKeySecondaryTextPressed                     : value=0x0329
+ImmersiveHardwareKeyboardKeySecondaryTextRest                        : value=0x032a
+ImmersiveHardwareKeyboardNumberKeyBackground                         : value=0x032b
+ImmersiveHardwareKeyboardNumberKeyBackgroundHover                    : value=0x032c
+ImmersiveHardwareKeyboardNumberKeyText                               : value=0x032d
+ImmersiveHardwareKeyboardThumbCentralNumberKeyBackground             : value=0x032e
+ImmersiveHardwareKeyboardThumbCentralNumberKeyText                   : value=0x032f
+ImmersiveHardwareKeyboardThumbResizeGripperBackgroundRest            : value=0x0330
+ImmersiveHardwareKeyboardTitleBarText                                : value=0x0331
+ImmersiveHardwareKeyboardTitleBarTextDisabled                        : value=0x0332
+ImmersiveHardwarePinFlyoutFlipViewFillHover                          : value=0x0333
+ImmersiveHardwarePinFlyoutFlipViewFillPressed                        : value=0x0334
+ImmersiveHardwarePinFlyoutFlipViewFillRest                           : value=0x0335
+ImmersiveHardwarePinFlyoutFlipViewGlyphHover                         : value=0x0336
+ImmersiveHardwarePinFlyoutFlipViewGlyphPressed                       : value=0x0337
+ImmersiveHardwarePinFlyoutFlipViewGlyphRest                          : value=0x0338
+ImmersiveHardwarePinFlyoutFlipViewOutlineHover                       : value=0x0339
+ImmersiveHardwarePinFlyoutFlipViewOutlinePressed                     : value=0x033a
+ImmersiveHardwarePinFlyoutFlipViewOutlineRest                        : value=0x033b
+ImmersiveHardwarePlaybackBarProgressFill                             : value=0x033c
+ImmersiveHardwarePlaybackBarRest                                     : value=0x033d
+ImmersiveHardwarePlaybackBarTrim                                     : value=0x033e
+ImmersiveHardwarePlaybackButtonFill                                  : value=0x033f
+ImmersiveHardwarePlaybackButtonFillHover                             : value=0x0340
+ImmersiveHardwarePlaybackButtonFillPressed                           : value=0x0341
+ImmersiveHardwarePlaybackButtonGlyph                                 : value=0x0342
+ImmersiveHardwarePlaybackButtonGlyphHover                            : value=0x0343
+ImmersiveHardwarePlaybackButtonGlyphPressed                          : value=0x0344
+ImmersiveHardwarePlaybackButtonOutline                               : value=0x0345
+ImmersiveHardwarePrimaryText                                         : value=0x0346
+ImmersiveHardwareScreenFill                                          : value=0x0347
+ImmersiveHardwareScrubberControlFill                                 : value=0x0348
+ImmersiveHardwareScrubberControlFillHover                            : value=0x0349
+ImmersiveHardwareScrubberControlFillPressed                          : value=0x034a
+ImmersiveHardwareScrubberControlOutline                              : value=0x034b
+ImmersiveHardwareScrubberControlOutlineHover                         : value=0x034c
+ImmersiveHardwareScrubberControlOutlinePressed                       : value=0x034d
+ImmersiveHardwareSemanticZoomBackground                              : value=0x034e
+ImmersiveHardwareSemanticZoomBackgroundHover                         : value=0x034f
+ImmersiveHardwareSemanticZoomBackgroundPressed                       : value=0x0350
+ImmersiveHardwareSemanticZoomForeground                              : value=0x0351
+ImmersiveHardwareSemanticZoomForegroundHover                         : value=0x0352
+ImmersiveHardwareSemanticZoomForegroundPressed                       : value=0x0353
+ImmersiveHardwareSettingCharmSystemPaneButtonDisabled                : value=0x0354
+ImmersiveHardwareSettingCharmSystemPaneButtonHover                   : value=0x0355
+ImmersiveHardwareSettingCharmSystemPaneButtonPressed                 : value=0x0356
+ImmersiveHardwareSettingCharmSystemPaneButtonRest                    : value=0x0357
+ImmersiveHardwareSettingCharmSystemPaneButtonSelected                : value=0x0358
+ImmersiveHardwareSettingCharmSystemPaneButtonText                    : value=0x0359
+ImmersiveHardwareSettingCharmSystemPaneButtonTextDisabled            : value=0x035a
+ImmersiveHardwareSettingCharmSystemPaneButtonTextHover               : value=0x035b
+ImmersiveHardwareSettingCharmSystemPaneButtonTextPressed             : value=0x035c
+ImmersiveHardwareSettingCharmSystemPaneButtonTextSelected            : value=0x035d
+ImmersiveHardwareTextPredictionBackgroundPressed                     : value=0x035e
+ImmersiveHardwareTextPredictionBackgroundRest                        : value=0x035f
+ImmersiveHardwareTextPredictionBorder                                : value=0x0360
+ImmersiveHardwareTextPredictionTextPressed                           : value=0x0361
+ImmersiveHardwareTextPredictionTextRest                              : value=0x0362
+ImmersiveHardwareTitleBarBackground                                  : value=0x0363
+ImmersiveHardwareTitleBarCloseButtonHover                            : value=0x0364
+ImmersiveHardwareTitleBarCloseButtonPressed                          : value=0x0365
+ImmersiveHardwareTitleBarMinimizeButtonHover                         : value=0x0366
+ImmersiveHardwareTitleBarMinimizeButtonPressed                       : value=0x0367
+ImmersiveHardwareTrimBarProgressFill                                 : value=0x0368
+ImmersiveHardwareTrimControlFill                                     : value=0x0369
+ImmersiveHardwareTrimControlFillHover                                : value=0x036a
+ImmersiveHardwareTrimControlFillPressed                              : value=0x036b
+ImmersiveHardwareTrimControlOutline                                  : value=0x036c
+ImmersiveHardwareTrimControlOutlineHover                             : value=0x036d
+ImmersiveHardwareTrimControlOutlinePressed                           : value=0x036e
+ImmersiveHardwareWin8Pillarbox                                       : value=0x036f
+ImmersiveInputSwitchColorDarkBackground                              : value=0x0370 kind=dark
+ImmersiveInputSwitchColorDarkButtonBackgroundHover                   : value=0x0371 kind=dark
+ImmersiveInputSwitchColorDarkButtonBackgroundPressed                 : value=0x0372 kind=dark
+ImmersiveInputSwitchColorDarkButtonSecondaryTextHover                : value=0x0373 kind=dark
+ImmersiveInputSwitchColorDarkButtonSecondaryTextPressed              : value=0x0374 kind=dark
+ImmersiveInputSwitchColorDarkButtonSecondaryTextRest                 : value=0x0375 kind=dark
+ImmersiveInputSwitchColorDarkButtonTextHover                         : value=0x0376 kind=dark
+ImmersiveInputSwitchColorDarkButtonTextPressed                       : value=0x0377 kind=dark
+ImmersiveInputSwitchColorDarkButtonTextRest                          : value=0x0378 kind=dark
+ImmersiveInputSwitchColorDarkDisabledText                            : value=0x0379 kind=dark
+ImmersiveInputSwitchColorDarkRadioButtonBackgroundDisabledSelected   : value=0x037a kind=dark
+ImmersiveInputSwitchColorDarkRadioButtonBackgroundSelected           : value=0x037b kind=dark
+ImmersiveInputSwitchColorDarkRadioButtonBorder                       : value=0x037c kind=dark
+ImmersiveInputSwitchColorDarkRadioButtonTextDisabledSelected         : value=0x037d kind=dark
+ImmersiveInputSwitchColorDarkSelectionPrimaryText                    : value=0x037e kind=dark
+ImmersiveInputSwitchColorDarkSeparatorLine                           : value=0x037f kind=dark
+ImmersiveInputSwitchColorDarkWindowBorder                            : value=0x0380 kind=dark
+ImmersiveInputSwitchDarkBackground                                   : value=0x0381 kind=dark rival=ImmersiveInputSwitchLightBackground
+ImmersiveInputSwitchDarkButtonBackgroundHover                        : value=0x0382 kind=dark rival=ImmersiveInputSwitchLightButtonBackgroundHover
+ImmersiveInputSwitchDarkButtonBackgroundPressed                      : value=0x0383 kind=dark rival=ImmersiveInputSwitchLightButtonBackgroundPressed
+ImmersiveInputSwitchDarkButtonSecondaryTextHover                     : value=0x0384 kind=dark rival=ImmersiveInputSwitchLightButtonSecondaryTextHover
+ImmersiveInputSwitchDarkButtonSecondaryTextPressed                   : value=0x0385 kind=dark rival=ImmersiveInputSwitchLightButtonSecondaryTextPressed
+ImmersiveInputSwitchDarkButtonSecondaryTextRest                      : value=0x0386 kind=dark rival=ImmersiveInputSwitchLightButtonSecondaryTextRest
+ImmersiveInputSwitchDarkButtonTextHover                              : value=0x0387 kind=dark rival=ImmersiveInputSwitchLightButtonTextHover
+ImmersiveInputSwitchDarkButtonTextPressed                            : value=0x0388 kind=dark rival=ImmersiveInputSwitchLightButtonTextPressed
+ImmersiveInputSwitchDarkButtonTextRest                               : value=0x0389 kind=dark rival=ImmersiveInputSwitchLightButtonTextRest
+ImmersiveInputSwitchDarkDisabledText                                 : value=0x038a kind=dark rival=ImmersiveInputSwitchLightDisabledText
+ImmersiveInputSwitchDarkRadioButtonBackgroundDisabledSelected        : value=0x038b kind=dark rival=ImmersiveInputSwitchLightRadioButtonBackgroundDisabledSelected
+ImmersiveInputSwitchDarkRadioButtonBackgroundSelected                : value=0x038c kind=dark rival=ImmersiveInputSwitchLightRadioButtonBackgroundSelected
+ImmersiveInputSwitchDarkRadioButtonBorder                            : value=0x038d kind=dark rival=ImmersiveInputSwitchLightRadioButtonBorder
+ImmersiveInputSwitchDarkRadioButtonTextDisabledSelected              : value=0x038e kind=dark rival=ImmersiveInputSwitchLightRadioButtonTextDisabledSelected
+ImmersiveInputSwitchDarkSelectionPrimaryText                         : value=0x038f kind=dark rival=ImmersiveInputSwitchLightSelectionPrimaryText
+ImmersiveInputSwitchDarkSeparatorLine                                : value=0x0390 kind=dark rival=ImmersiveInputSwitchLightSeparatorLine
+ImmersiveInputSwitchDarkWindowBorder                                 : value=0x0391 kind=dark rival=ImmersiveInputSwitchLightWindowBorder
+ImmersiveInputSwitchLightBackground                                  : value=0x0392 kind=light rival=ImmersiveInputSwitchDarkBackground
+ImmersiveInputSwitchLightButtonBackgroundHover                       : value=0x0393 kind=light rival=ImmersiveInputSwitchDarkButtonBackgroundHover
+ImmersiveInputSwitchLightButtonBackgroundPressed                     : value=0x0394 kind=light rival=ImmersiveInputSwitchDarkButtonBackgroundPressed
+ImmersiveInputSwitchLightButtonSecondaryTextHover                    : value=0x0395 kind=light rival=ImmersiveInputSwitchDarkButtonSecondaryTextHover
+ImmersiveInputSwitchLightButtonSecondaryTextPressed                  : value=0x0396 kind=light rival=ImmersiveInputSwitchDarkButtonSecondaryTextPressed
+ImmersiveInputSwitchLightButtonSecondaryTextRest                     : value=0x0397 kind=light rival=ImmersiveInputSwitchDarkButtonSecondaryTextRest
+ImmersiveInputSwitchLightButtonTextHover                             : value=0x0398 kind=light rival=ImmersiveInputSwitchDarkButtonTextHover
+ImmersiveInputSwitchLightButtonTextPressed                           : value=0x0399 kind=light rival=ImmersiveInputSwitchDarkButtonTextPressed
+ImmersiveInputSwitchLightButtonTextRest                              : value=0x039a kind=light rival=ImmersiveInputSwitchDarkButtonTextRest
+ImmersiveInputSwitchLightDisabledText                                : value=0x039b kind=light rival=ImmersiveInputSwitchDarkDisabledText
+ImmersiveInputSwitchLightRadioButtonBackgroundDisabledSelected       : value=0x039c kind=light rival=ImmersiveInputSwitchDarkRadioButtonBackgroundDisabledSelected
+ImmersiveInputSwitchLightRadioButtonBackgroundSelected               : value=0x039d kind=light rival=ImmersiveInputSwitchDarkRadioButtonBackgroundSelected
+ImmersiveInputSwitchLightRadioButtonBorder                           : value=0x039e kind=light rival=ImmersiveInputSwitchDarkRadioButtonBorder
+ImmersiveInputSwitchLightRadioButtonTextDisabledSelected             : value=0x039f kind=light rival=ImmersiveInputSwitchDarkRadioButtonTextDisabledSelected
+ImmersiveInputSwitchLightSelectionPrimaryText                        : value=0x03a0 kind=light rival=ImmersiveInputSwitchDarkSelectionPrimaryText
+ImmersiveInputSwitchLightSeparatorLine                               : value=0x03a1 kind=light rival=ImmersiveInputSwitchDarkSeparatorLine
+ImmersiveInputSwitchLightWindowBorder                                : value=0x03a2 kind=light rival=ImmersiveInputSwitchDarkWindowBorder
+ImmersiveLightAltHigh                                                : value=0x03a3 kind=light rival=ImmersiveDarkAltHigh
+ImmersiveLightAltLow                                                 : value=0x03a4 kind=light rival=ImmersiveDarkAltLow
+ImmersiveLightAltMedium                                              : value=0x03a5 kind=light rival=ImmersiveDarkAltMedium
+ImmersiveLightAltMediumHigh                                          : value=0x03a6 kind=light rival=ImmersiveDarkAltMediumHigh
+ImmersiveLightAltMediumLow                                           : value=0x03a7 kind=light rival=ImmersiveDarkAltMediumLow
+ImmersiveLightBackground                                             : value=0x03a8 kind=light
+ImmersiveLightBackgroundDisabled                                     : value=0x03a9 kind=light
+ImmersiveLightBaseHigh                                               : value=0x03aa kind=light rival=ImmersiveDarkBaseHigh
+ImmersiveLightBaseLow                                                : value=0x03ab kind=light rival=ImmersiveDarkBaseLow
+ImmersiveLightBaseMedium                                             : value=0x03ac kind=light rival=ImmersiveDarkBaseMedium
+ImmersiveLightBaseMediumHigh                                         : value=0x03ad kind=light rival=ImmersiveDarkBaseMediumHigh
+ImmersiveLightBaseMediumLow                                          : value=0x03ae kind=light rival=ImmersiveDarkBaseMediumLow
+ImmersiveLightBorder                                                 : value=0x03af kind=light
+ImmersiveLightChromeAltLow                                           : value=0x03b0 kind=light rival=ImmersiveDarkChromeAltLow
+ImmersiveLightChromeBlackHigh                                        : value=0x03b1 kind=light rival=ImmersiveDarkChromeBlackHigh
+ImmersiveLightChromeBlackLow                                         : value=0x03b2 kind=light rival=ImmersiveDarkChromeBlackLow
+ImmersiveLightChromeBlackMedium                                      : value=0x03b3 kind=light rival=ImmersiveDarkChromeBlackMedium
+ImmersiveLightChromeBlackMediumLow                                   : value=0x03b4 kind=light rival=ImmersiveDarkChromeBlackMediumLow
+ImmersiveLightChromeDisabledHigh                                     : value=0x03b5 kind=light rival=ImmersiveDarkChromeDisabledHigh
+ImmersiveLightChromeDisabledLow                                      : value=0x03b6 kind=light rival=ImmersiveDarkChromeDisabledLow
+ImmersiveLightChromeHigh                                             : value=0x03b7 kind=light rival=ImmersiveDarkChromeHigh
+ImmersiveLightChromeLow                                              : value=0x03b8 kind=light rival=ImmersiveDarkChromeLow
+ImmersiveLightChromeMedium                                           : value=0x03b9 kind=light rival=ImmersiveDarkChromeMedium
+ImmersiveLightChromeMediumLow                                        : value=0x03ba kind=light rival=ImmersiveDarkChromeMediumLow
+ImmersiveLightChromeTaskbarBase                                      : value=0x03bb kind=light rival=ImmersiveDarkChromeTaskbarBase
+ImmersiveLightChromeWhite                                            : value=0x03bc kind=light rival=ImmersiveDarkChromeWhite
+ImmersiveLightControlLink                                            : value=0x03bd kind=light
+ImmersiveLightControlLinkBackgroundPressed                           : value=0x03be kind=light
+ImmersiveLightControlLinkDisabled                                    : value=0x03bf kind=light rival=ImmersiveControlDarkLinkDisabled
+ImmersiveLightControlLinkForegroundPressed                           : value=0x03c0 kind=light
+ImmersiveLightControlLinkMouseHover                                  : value=0x03c1 kind=light
+ImmersiveLightControlLinkPressed                                     : value=0x03c2 kind=light rival=ImmersiveControlDarkLinkPressed
+ImmersiveLightControlLinkVisited                                     : value=0x03c3 kind=light rival=ImmersiveControlDarkLinkVisited
+ImmersiveLightDesktopToastBackground                                 : value=0x03c4 kind=light
+ImmersiveLightDisabledText                                           : value=0x03c5 kind=light
+ImmersiveLightDivider                                                : value=0x03c6 kind=light
+ImmersiveLightEntityItemBackgroundHover                              : value=0x03c7 kind=light
+ImmersiveLightEntityItemBackgroundSelected                           : value=0x03c8 kind=light
+ImmersiveLightEntityItemBorderHover                                  : value=0x03c9 kind=light
+ImmersiveLightEntityItemBorderSelected                               : value=0x03ca kind=light
+ImmersiveLightFocusRect                                              : value=0x03cb kind=light
+ImmersiveLightHighlight                                              : value=0x03cc kind=light
+ImmersiveLightHoverBackground                                        : value=0x03cd kind=light
+ImmersiveLightHoverBackgroundTransparent                             : value=0x03ce kind=light
+ImmersiveLightHoverPrimaryText                                       : value=0x03cf kind=light
+ImmersiveLightHoverSecondaryText                                     : value=0x03d0 kind=light
+ImmersiveLightIconBorder                                             : value=0x03d1 kind=light
+ImmersiveLightInlineErrorText                                        : value=0x03d2 kind=light
+ImmersiveLightListAccentHigh                                         : value=0x03d3 kind=light rival=ImmersiveDarkListAccentHigh
+ImmersiveLightListAccentLow                                          : value=0x03d4 kind=light rival=ImmersiveDarkListAccentLow
+ImmersiveLightListAccentMedium                                       : value=0x03d5 kind=light rival=ImmersiveDarkListAccentMedium
+ImmersiveLightListLow                                                : value=0x03d6 kind=light rival=ImmersiveDarkListLow
+ImmersiveLightListMedium                                             : value=0x03d7 kind=light rival=ImmersiveDarkListMedium
+ImmersiveLightNavBackground                                          : value=0x03d8 kind=light
+ImmersiveLightPCSettingsNavBarItemBackgroundHover                    : value=0x03d9 kind=light
+ImmersiveLightPCSettingsNavBarItemBackgroundTouchPressed             : value=0x03da kind=light
+ImmersiveLightPCSettingsSearchButtonBackgroundHover                  : value=0x03db kind=light
+ImmersiveLightPCSettingsSearchButtonBackgroundPressed                : value=0x03dc kind=light
+ImmersiveLightPCSettingsSearchButtonBackgroundRest                   : value=0x03dd kind=light
+ImmersiveLightPlaceholderBackground                                  : value=0x03de kind=light
+ImmersiveLightPrimaryChartFill                                       : value=0x03df kind=light
+ImmersiveLightPrimaryText                                            : value=0x03e0 kind=light
+ImmersiveLightSearchAdBackground                                     : value=0x03e1 kind=light
+ImmersiveLightSearchContactHeroAccentDark                            : value=0x03e2 kind=dark
+ImmersiveLightSearchContactHeroAccentHitHighlight                    : value=0x03e3 kind=light
+ImmersiveLightSearchContactHeroAccentLight                           : value=0x03e4 kind=light
+ImmersiveLightSearchContactHeroAccentLink                            : value=0x03e5 kind=light
+ImmersiveLightSearchFinanceGreen                                     : value=0x03e6 kind=light
+ImmersiveLightSearchFinanceRed                                       : value=0x03e7 kind=light
+ImmersiveLightSearchHeroBackground                                   : value=0x03e8 kind=light
+ImmersiveLightSearchHeroCollageAccentDark                            : value=0x03e9 kind=dark
+ImmersiveLightSearchHeroCollageAccentLight                           : value=0x03ea kind=light
+ImmersiveLightSearchHeroMapAccentDark                                : value=0x03eb kind=dark
+ImmersiveLightSearchHeroMapAccentLight                               : value=0x03ec kind=light
+ImmersiveLightSearchHitHighlight                                     : value=0x03ed kind=light
+ImmersiveLightSearchNewsBackground                                   : value=0x03ee kind=light
+ImmersiveLightSearchNewsBackgroundBorder                             : value=0x03ef kind=light
+ImmersiveLightSearchSettingTilesBackground                           : value=0x03f0 kind=light
+ImmersiveLightSearchStoreRatingEmpty                                 : value=0x03f1 kind=light
+ImmersiveLightSearchStoreRatingFull                                  : value=0x03f2 kind=light
+ImmersiveLightSearchVideoTextWhite                                   : value=0x03f3 kind=light
+ImmersiveLightSearchWeatherBlue                                      : value=0x03f4 kind=light
+ImmersiveLightSecondaryChartFill                                     : value=0x03f5 kind=light
+ImmersiveLightSecondaryText                                          : value=0x03f6 kind=light
+ImmersiveLightSecondaryTextTransparent                               : value=0x03f7 kind=light
+ImmersiveLightSelectedTabText                                        : value=0x03f8 kind=light
+ImmersiveLightSelectionBackground                                    : value=0x03f9 kind=light
+ImmersiveLightSelectionHoverBackground                               : value=0x03fa kind=light
+ImmersiveLightSelectionHoverPrimaryText                              : value=0x03fb kind=light
+ImmersiveLightSelectionHoverSecondaryText                            : value=0x03fc kind=light
+ImmersiveLightSelectionPrimaryText                                   : value=0x03fd kind=light
+ImmersiveLightSelectionSecondaryText                                 : value=0x03fe kind=light
+ImmersiveLightTabText                                                : value=0x03ff kind=light
+ImmersiveLightTitleText                                              : value=0x0400 kind=light
+ImmersiveLightWUError                                                : value=0x0401 kind=light
+ImmersiveLightWUNormal                                               : value=0x0402 kind=light
+ImmersiveLightWUWarning                                              : value=0x0403 kind=light
+ImmersiveMultitaskingMTVActiveVirtualDesktopHotTrackOuterBorder      : value=0x0404
+ImmersiveMultitaskingMTVActiveVirtualDesktopOuterBorder              : value=0x0405
+ImmersiveMultitaskingMTVCloseGlyphHotTrack                           : value=0x0406
+ImmersiveMultitaskingMTVCloseGlyphPressed                            : value=0x0407
+ImmersiveMultitaskingMTVCloseGlyphRest                               : value=0x0408
+ImmersiveMultitaskingMTVCloseOutlineHotTrack                         : value=0x0409
+ImmersiveMultitaskingMTVCloseOutlinePressed                          : value=0x040a
+ImmersiveMultitaskingMTVCloseOutlineRest                             : value=0x040b
+ImmersiveMultitaskingMTVClosePlateHotTrack                           : value=0x040c
+ImmersiveMultitaskingMTVClosePlatePressed                            : value=0x040d
+ImmersiveMultitaskingMTVClosePlateRest                               : value=0x040e
+ImmersiveMultitaskingMTVDimmingLayer                                 : value=0x040f
+ImmersiveMultitaskingMTVInactiveVirtualDesktopDim                    : value=0x0410
+ImmersiveMultitaskingMTVNewDesktopFocusOutline                       : value=0x0411
+ImmersiveMultitaskingMTVNewDesktopOutlineHotTrack                    : value=0x0412
+ImmersiveMultitaskingMTVNewDesktopOutlinePressed                     : value=0x0413
+ImmersiveMultitaskingMTVNewDesktopOutlineRest                        : value=0x0414
+ImmersiveMultitaskingMTVNewDesktopPlateHotTrack                      : value=0x0415
+ImmersiveMultitaskingMTVNewDesktopPlatePressed                       : value=0x0416
+ImmersiveMultitaskingMTVNewDesktopPlateRest                          : value=0x0417
+ImmersiveMultitaskingMTVNewDesktopTextHotTrack                       : value=0x0418
+ImmersiveMultitaskingMTVNewDesktopTextPressed                        : value=0x0419
+ImmersiveMultitaskingMTVNewDesktopTextRest                           : value=0x041a
+ImmersiveMultitaskingMTVRestVirtualDesktopInner                      : value=0x041b
+ImmersiveMultitaskingMTVScrollButtonGlyphDisabled                    : value=0x041c
+ImmersiveMultitaskingMTVScrollButtonGlyphHotTrack                    : value=0x041d
+ImmersiveMultitaskingMTVScrollButtonGlyphPressed                     : value=0x041e
+ImmersiveMultitaskingMTVScrollButtonGlyphRest                        : value=0x041f
+ImmersiveMultitaskingMTVScrollButtonOutlineDisabled                  : value=0x0420
+ImmersiveMultitaskingMTVScrollButtonOutlineHotTrack                  : value=0x0421
+ImmersiveMultitaskingMTVScrollButtonOutlinePressed                   : value=0x0422
+ImmersiveMultitaskingMTVScrollButtonOutlineRest                      : value=0x0423
+ImmersiveMultitaskingMTVScrollButtonPlateDisabled                    : value=0x0424
+ImmersiveMultitaskingMTVScrollButtonPlateHotTrack                    : value=0x0425
+ImmersiveMultitaskingMTVScrollButtonPlatePressed                     : value=0x0426
+ImmersiveMultitaskingMTVScrollButtonPlateRest                        : value=0x0427
+ImmersiveMultitaskingMTVScrollViewerBackground                       : value=0x0428
+ImmersiveMultitaskingMTVScrollViewerOutline                          : value=0x0429
+ImmersiveMultitaskingMTVSwitchItemTitle                              : value=0x042a
+ImmersiveMultitaskingMTVThumbnailFocusInnerBorder                    : value=0x042b
+ImmersiveMultitaskingMTVThumbnailFocusOuterBorder                    : value=0x042c
+ImmersiveMultitaskingMTVThumbnailHotTrackInnerBorder                 : value=0x042d
+ImmersiveMultitaskingMTVThumbnailHotTrackOuterBorder                 : value=0x042e
+ImmersiveMultitaskingMTVThumbnailInnerBorder                         : value=0x042f
+ImmersiveMultitaskingMTVVirtualDesktopBarBackground                  : value=0x0430
+ImmersiveMultitaskingMTVVirtualDesktopBarOutline                     : value=0x0431
+ImmersiveMultitaskingMTVVirtualDesktopDragDrop                       : value=0x0432
+ImmersiveMultitaskingMTVVirtualDesktopHotTrackOuterBorder            : value=0x0433
+ImmersiveMultitaskingMTVVirtualDesktopInnerBorder                    : value=0x0434
+ImmersiveMultitaskingMTVVirtualDesktopTitle                          : value=0x0435
+ImmersiveSaturatedAltTabBackground                                   : value=0x0436
+ImmersiveSaturatedAltTabHoverRect                                    : value=0x0437
+ImmersiveSaturatedAltTabPressedRect                                  : value=0x0438
+ImmersiveSaturatedBackButtonBar                                      : value=0x0439
+ImmersiveSaturatedBackground                                         : value=0x043a
+ImmersiveSaturatedBackgroundDisabled                                 : value=0x043b
+ImmersiveSaturatedCommandRowDisabled                                 : value=0x043c
+ImmersiveSaturatedCommandRowHighlight                                : value=0x043d
+ImmersiveSaturatedCommandRowHover                                    : value=0x043e
+ImmersiveSaturatedCommandRowPressed                                  : value=0x043f
+ImmersiveSaturatedCommandRowRest                                     : value=0x0440
+ImmersiveSaturatedControlLink                                        : value=0x0441
+ImmersiveSaturatedControlLinkBackgroundPressed                       : value=0x0442
+ImmersiveSaturatedControlLinkDisabled                                : value=0x0443
+ImmersiveSaturatedControlLinkForegroundPressed                       : value=0x0444
+ImmersiveSaturatedControlLinkMouseHover                              : value=0x0445
+ImmersiveSaturatedControlLinkPressed                                 : value=0x0446
+ImmersiveSaturatedControlLinkVisited                                 : value=0x0447
+ImmersiveSaturatedDefaultDarkFocusRect                               : value=0x0448 kind=dark rival=ImmersiveSaturatedDefaultLightFocusRect
+ImmersiveSaturatedDefaultLightFocusRect                              : value=0x0449 kind=light rival=ImmersiveSaturatedDefaultDarkFocusRect
+ImmersiveSaturatedDesktopToastBackground                             : value=0x044a
+ImmersiveSaturatedDisabledText                                       : value=0x044b
+ImmersiveSaturatedDivider                                            : value=0x044c
+ImmersiveSaturatedFocusRect                                          : value=0x044d
+ImmersiveSaturatedFocusRectDark                                      : value=0x044e kind=dark
+ImmersiveSaturatedFolderBackground                                   : value=0x044f
+ImmersiveSaturatedHighlight                                          : value=0x0450
+ImmersiveSaturatedHoverBackground                                    : value=0x0451
+ImmersiveSaturatedHoverPrimaryText                                   : value=0x0452
+ImmersiveSaturatedHoverSecondaryText                                 : value=0x0453
+ImmersiveSaturatedInlineErrorText                                    : value=0x0454
+ImmersiveSaturatedPrimaryText                                        : value=0x0455
+ImmersiveSaturatedSearchHighlight                                    : value=0x0456
+ImmersiveSaturatedSearchSecondaryText                                : value=0x0457
+ImmersiveSaturatedSecondaryText                                      : value=0x0458
+ImmersiveSaturatedSecondaryTextDisabledTransparent                   : value=0x0459
+ImmersiveSaturatedSecondaryTextTransparent                           : value=0x045a
+ImmersiveSaturatedSelectionBackground                                : value=0x045b
+ImmersiveSaturatedSelectionHoverBackground                           : value=0x045c
+ImmersiveSaturatedSelectionHoverPrimaryText                          : value=0x045d
+ImmersiveSaturatedSelectionHoverSecondaryText                        : value=0x045e
+ImmersiveSaturatedSelectionPrimaryText                               : value=0x045f
+ImmersiveSaturatedSelectionSecondaryText                             : value=0x0460
+ImmersiveSaturatedSettingCharmSystemPaneButtonDisabled               : value=0x0461
+ImmersiveSaturatedSettingCharmSystemPaneButtonHover                  : value=0x0462
+ImmersiveSaturatedSettingCharmSystemPaneButtonPressed                : value=0x0463
+ImmersiveSaturatedSettingCharmSystemPaneButtonRest                   : value=0x0464
+ImmersiveSaturatedSettingCharmSystemPaneButtonSelected               : value=0x0465
+ImmersiveSaturatedSettingCharmSystemPaneButtonText                   : value=0x0466
+ImmersiveSaturatedSettingCharmSystemPaneButtonTextDisabled           : value=0x0467
+ImmersiveSaturatedSettingCharmSystemPaneButtonTextHover              : value=0x0468
+ImmersiveSaturatedSettingCharmSystemPaneButtonTextPressed            : value=0x0469
+ImmersiveSaturatedSettingCharmSystemPaneButtonTextSelected           : value=0x046a
+ImmersiveSaturatedSettingsCharmLinkHover                             : value=0x046b
+ImmersiveSaturatedSuggestionTilesBackground                          : value=0x046c
+ImmersiveSaturatedSystemToastBackground                              : value=0x046d
+ImmersiveSaturatedThumbnailPlaceholder                               : value=0x046e
+ImmersiveSaturatedWebWizardIndex                                     : value=0x046f
+ImmersiveStartAllAppsDivider                                         : value=0x0470
+ImmersiveStartAPVBackground                                          : value=0x0471
+ImmersiveStartAPVHeaderText                                          : value=0x0472
+ImmersiveStartAPVNewAppText                                          : value=0x0473
+ImmersiveStartAPVSemanticZoomTileBackground                          : value=0x0474
+ImmersiveStartBackground                                             : value=0x0475
+ImmersiveStartBackgroundDisabled                                     : value=0x0476
+ImmersiveStartCmdBarBackground                                       : value=0x0477
+ImmersiveStartCmdBarButtonFillLayerHover                             : value=0x0478
+ImmersiveStartCmdBarButtonFillLayerPressed                           : value=0x0479
+ImmersiveStartCmdBarButtonFillLayerRest                              : value=0x047a
+ImmersiveStartCmdBarButtonGlyphLayerHover                            : value=0x047b
+ImmersiveStartCmdBarButtonGlyphLayerPressed                          : value=0x047c
+ImmersiveStartCmdBarButtonGlyphLayerRest                             : value=0x047d
+ImmersiveStartCmdBarButtonOutlineLayerHover                          : value=0x047e
+ImmersiveStartCmdBarButtonOutlineLayerPressed                        : value=0x047f
+ImmersiveStartCmdBarButtonOutlineLayerRest                           : value=0x0480
+ImmersiveStartCommandRowDisabled                                     : value=0x0481
+ImmersiveStartCommandRowHighlight                                    : value=0x0482
+ImmersiveStartCommandRowHover                                        : value=0x0483
+ImmersiveStartCommandRowPressed                                      : value=0x0484
+ImmersiveStartCommandRowRest                                         : value=0x0485
+ImmersiveStartControlLink                                            : value=0x0486
+ImmersiveStartControlLinkBackgroundPressed                           : value=0x0487
+ImmersiveStartControlLinkDisabled                                    : value=0x0488
+ImmersiveStartControlLinkForegroundPressed                           : value=0x0489
+ImmersiveStartControlLinkMouseHover                                  : value=0x048a
+ImmersiveStartControlLinkPressed                                     : value=0x048b
+ImmersiveStartControlLinkVisited                                     : value=0x048c
+ImmersiveStartDarkTileInstallProgressFill                            : value=0x048d kind=dark rival=ImmersiveStartLightTileInstallProgressFill
+ImmersiveStartDarkTileInstallProgressTrack                           : value=0x048e kind=dark rival=ImmersiveStartLightTileInstallProgressTrack
+ImmersiveStartDefaultDarkFocusRect                                   : value=0x048f kind=dark rival=ImmersiveStartDefaultLightFocusRect
+ImmersiveStartDefaultLightFocusRect                                  : value=0x0490 kind=light rival=ImmersiveStartDefaultDarkFocusRect
+ImmersiveStartDesktopAppBackground                                   : value=0x0491
+ImmersiveStartDesktopBackgroundTattooAllAppsDivider                  : value=0x0492
+ImmersiveStartDesktopBackgroundTattooSecondaryText                   : value=0x0493
+ImmersiveStartDesktopBackgroundTattooStartPromptBackgroundHover      : value=0x0494
+ImmersiveStartDesktopBackgroundTattooStartPromptBackgroundRest       : value=0x0495
+ImmersiveStartDesktopBackgroundTattooTileDim                         : value=0x0496
+ImmersiveStartDesktopBackgroundTattooViewSwitchButtonHover           : value=0x0497
+ImmersiveStartDesktopBackgroundTattooViewSwitchButtonRest            : value=0x0498
+ImmersiveStartDesktopTilesBackground                                 : value=0x0499
+ImmersiveStartDesktopTilesText                                       : value=0x049a
+ImmersiveStartDisabledText                                           : value=0x049b
+ImmersiveStartFocusRect                                              : value=0x049c
+ImmersiveStartFolderBackground                                       : value=0x049d
+ImmersiveStartGroupNameHeader                                        : value=0x049e
+ImmersiveStartHighlight                                              : value=0x049f
+ImmersiveStartHoverBackground                                        : value=0x04a0
+ImmersiveStartHoverPrimaryText                                       : value=0x04a1
+ImmersiveStartHoverSecondaryText                                     : value=0x04a2
+ImmersiveStartInlineErrorText                                        : value=0x04a3
+ImmersiveStartLightTileInstallProgressFill                           : value=0x04a4 kind=light rival=ImmersiveStartDarkTileInstallProgressFill
+ImmersiveStartLightTileInstallProgressTrack                          : value=0x04a5 kind=light rival=ImmersiveStartDarkTileInstallProgressTrack
+ImmersiveStartPrimaryText                                            : value=0x04a6
+ImmersiveStartRoundButtonHover                                       : value=0x04a7
+ImmersiveStartRoundButtonPressed                                     : value=0x04a8
+ImmersiveStartRoundButtonRest                                        : value=0x04a9
+ImmersiveStartSecondaryText                                          : value=0x04aa
+ImmersiveStartSelectionBackground                                    : value=0x04ab
+ImmersiveStartSelectionHoverBackground                               : value=0x04ac
+ImmersiveStartSelectionHoverPrimaryText                              : value=0x04ad
+ImmersiveStartSelectionHoverSecondaryText                            : value=0x04ae
+ImmersiveStartSelectionPrimaryText                                   : value=0x04af
+ImmersiveStartSelectionSecondaryText                                 : value=0x04b0
+ImmersiveStartSystemTilesBackground                                  : value=0x04b1
+ImmersiveStartThumbnailPlaceholder                                   : value=0x04b2
+ImmersiveSystemAccent                                                : value=0x04b3
+ImmersiveSystemAccentDark1                                           : value=0x04b4 kind=dark rival=ImmersiveSystemAccentLight1
+ImmersiveSystemAccentDark2                                           : value=0x04b5 kind=dark rival=ImmersiveSystemAccentLight2
+ImmersiveSystemAccentDark3                                           : value=0x04b6 kind=dark rival=ImmersiveSystemAccentLight3
+ImmersiveSystemAccentLight1                                          : value=0x04b7 kind=light rival=ImmersiveSystemAccentDark1
+ImmersiveSystemAccentLight2                                          : value=0x04b8 kind=light rival=ImmersiveSystemAccentDark2
+ImmersiveSystemAccentLight3                                          : value=0x04b9 kind=light rival=ImmersiveSystemAccentDark3
+ImmersiveSystemBackground                                            : value=0x04ba
+ImmersiveSystemBackgroundDarkTheme                                   : value=0x04bb kind=dark rival=ImmersiveSystemBackgroundLightTheme
+ImmersiveSystemBackgroundLightTheme                                  : value=0x04bc kind=light rival=ImmersiveSystemBackgroundDarkTheme
+ImmersiveSystemText                                                  : value=0x04bd
+ImmersiveSystemTextDarkTheme                                         : value=0x04be kind=dark rival=ImmersiveSystemTextLightTheme
+ImmersiveSystemTextLightTheme                                        : value=0x04bf kind=light rival=ImmersiveSystemTextDarkTheme
+ImmersiveTabletModeDragJointDividerBackground                        : value=0x04c0
+ImmersiveTabletModePPIJointDividerBackground                         : value=0x04c1

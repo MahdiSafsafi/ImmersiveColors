@@ -1,0 +1,15 @@
+object Main: TMain
+  Left = 256
+  Height = 240
+  Top = 175
+  Width = 367
+  Caption = 'Main - try change system settings'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.0.0.4'
+  object ImmersiveNotify1: TImmersiveNotify
+    OnChange = ImmersiveNotify1Change
+    left = 83
+    top = 41
+  end
+end
