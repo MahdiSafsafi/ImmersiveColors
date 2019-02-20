@@ -158,8 +158,23 @@ type
 {$IFDEF WINOS}
 
 
+type
+  TSystemSettingsChanged = class(TThread)
+  private
+    FKeyHandle: HKEY;
+    FNotifyFilter: DWORD;
+    FEvent: THandle;
+    FSuccess: Boolean;
+  protected
+    procedure Execute; override;
+  public
+    procedure Release;
+    constructor Create; overload;
+  end;
+
 const
   themelib = 'uxtheme.dll';
+  UM_SYSTEM_SETTINGS_CHANGED = WM_USER + $50;
 
   { ===> Undocumented UxTheme functions <=== }
 
@@ -190,6 +205,7 @@ var
     lpszMenuName: nil;
     lpszClassName: 'TPUtilWindow');
   Window: HWND = INVALID_HANDLE_VALUE;
+  SystemSettingsChanged: TSystemSettingsChanged = nil;
 
 function StaticAllocateHWnd(const AMethod: TStaticWndMethod): HWND;
 var
@@ -219,13 +235,34 @@ end;
 
 function WndProc(Handle: HWND; MSG: UInt; WPARAM: WPARAM;
   LPARAM: LPARAM): LRESULT; stdcall;
+  procedure DoNotify;
+  var
+    i: Integer;
+    Event: TColorChangedEvent;
+    P: PEventData;
+  begin
+    for i := 0 to FColorSetChangedEvents.Count - 1 do
+    begin
+      P := FColorSetChangedEvents[i];
+      if (Assigned(P)) then
+      begin
+        @Event := P^.Event;
+        Event(P^.UserTag);
+      end;
+    end;
+  end;
+
 var
   Message: TMessage;
-  i: Integer;
-  Event: TColorChangedEvent;
-  P: PEventData;
+
 begin
   case MSG of
+    UM_SYSTEM_SETTINGS_CHANGED:
+      begin
+        DoNotify();
+        Result := 0;
+        exit();
+      end;
     WM_SETTINGCHANGE:
       begin
         Message.MSG := MSG;
@@ -233,15 +270,7 @@ begin
         Message.LPARAM := LPARAM;
         if (lstrcmpi(TWMSettingChange(Message).Section, 'ImmersiveColorSet') = 0) then
         begin
-          for i := 0 to FColorSetChangedEvents.Count - 1 do
-          begin
-            P := FColorSetChangedEvents[i];
-            if (Assigned(P)) then
-            begin
-              @Event := P^.Event;
-              Event(P^.UserTag);
-            end;
-          end;
+          DoNotify();
         end;
       end;
   end;
@@ -413,6 +442,68 @@ begin
   end;
 end;
 
+{ TSystemSettingsChanged }
+
+constructor TSystemSettingsChanged.Create;
+const
+  Personalize = 'Software\Microsoft\Windows\CurrentVersion\Themes\Personalize';
+var
+  ErrorCode: DWORD;
+begin
+  FSuccess := False;
+  FEvent := CreateEvent(nil, True, False, nil);
+  if (FEvent <> 0) then
+  begin
+    FNotifyFilter := REG_NOTIFY_CHANGE_NAME or
+      REG_NOTIFY_CHANGE_ATTRIBUTES or
+      REG_NOTIFY_CHANGE_LAST_SET or
+      REG_NOTIFY_CHANGE_SECURITY;
+    ErrorCode := RegOpenKeyEx(HKEY_CURRENT_USER, Personalize, 0, KEY_NOTIFY or KEY_READ, FKeyHandle);
+    FSuccess := (ErrorCode = ERROR_SUCCESS);
+    if not FSuccess then
+      CloseHandle(FEvent);
+  end;
+  inherited;
+end;
+
+procedure TSystemSettingsChanged.Release;
+begin
+  if (FEvent <> 0) then
+  begin
+    SetEvent(FEvent);
+  end;
+end;
+
+procedure TSystemSettingsChanged.Execute;
+var
+  ErrorCode: DWORD;
+  ReturnCode: DWORD;
+begin
+  if not FSuccess then
+    exit();
+
+  while (True) do
+  begin
+    ErrorCode := RegNotifyChangeKeyValue(FKeyHandle, False, FNotifyFilter, FEvent, True);
+    if (ErrorCode <> ERROR_SUCCESS) then
+      break;
+    ReturnCode := WaitForSingleObject(FEvent, INFINITE);
+    case ReturnCode of
+      WAIT_FAILED:
+        break;
+    end;
+    if Terminated then
+      break;
+    ResetEvent(FEvent);
+    if ((Window <> INVALID_HANDLE_VALUE) and IsWindow(Window)) then
+      PostMessage(Window, UM_SYSTEM_SETTINGS_CHANGED, 0, 0)
+    else
+      break;
+  end;
+  RegCloseKey(FKeyHandle);
+  CloseHandle(FEvent);
+end;
+
 {$ELSE !WINOS}
 
 
@@ -541,6 +632,7 @@ begin
       @VGetImmersiveColorNamedTypeByIndex := GetProcAddress(ThemeLibModuleHandle,
         MakeIntResource(100));
       Window := StaticAllocateHWnd(@WndProc);
+      // SystemSettingsChanged := TSystemSettingsChanged.Create();
     end;
   end;
 {$ENDIF !WINOS}
@@ -559,6 +651,12 @@ begin
   end;
   FColorSetChangedEvents.Free();
 {$IFDEF WINOS}
+  if (Assigned(SystemSettingsChanged)) then
+  begin
+    SystemSettingsChanged.Terminate();
+    SystemSettingsChanged.Release();
+    FreeAndNil(SystemSettingsChanged);
+  end;
   if (Window <> INVALID_HANDLE_VALUE) then
     StaticDeallocateHWnd(Window);
 {$ENDIF !WINOS}
